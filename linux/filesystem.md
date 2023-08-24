@@ -1,8 +1,14 @@
-# Overview of Linux Commands
+## **Linux Filesystem**
 
-ls, cd, mv, python3, apt, git, bash, echo, cat, less, vim, code
-
-## **Filesystem Commands**
+### **Filesystem Basics**
+- **directory**: a folder
+- **`..` aka parent directory**: the directory "above" a directory (e.g. the parent directory of `~/2023RobotCode/docker`, represented by `~/2023RobotCode/docker/..`, is `~/2023RobotCode`)
+- **subdirectory**: the opposite of a parent directory, a subdirectory is a directory below another directory
+- **path**: the location of a file or directory, components are separated by slashes (`/`)
+    - e.g. to get to `/home/ubuntu/2023RobotCode/zebROS_ws/src`, go to `/`, then `home`, then `ubuntu`, then `2023RobotCode`, then `zebROS_ws`, then `src`
+- **`.`**: your current directory, to run scripts in your current directory you will need to put `./` before them (e.g. `./docker-run`)
+- **`~` aka home directory**: usually located at `/home/[username]`, this is where you put all of your stuff
+- **`/` at the start of a path**: the root directory (if you visualize your directories as a tree, this is the directory at the "top" of the tree)
 
 ### [`ls`](#ls)
 - **Description**: <ins>l</ins>i<ins>s</ins>ts files in a directory
@@ -78,37 +84,3 @@ ls, cd, mv, python3, apt, git, bash, echo, cat, less, vim, code
     bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ cat hello
     Hello striped zebras!
     ```
-
-## **Text Editing/Programming**
-
-### [`python3`](#python3)
-- **Description**: the Python interpreter!
-- **Usage**: `python3 [program]`
-    - If `[program]` is not provided, a Python interpreter will show up. Otherwise, your file will be executed.
-- **Example**:
-    ```bash
-    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ python3
-    Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0] on linux
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>> print("Hello World from Python")
-    Hello World from Python
-    ```
-
-    ```bash
-    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ cat hello_world.py
-    print("Hello World from a Python program")
-    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ python3 hello_world.py
-    Hello World from a Python program
-    ```
-
-### [`vim`](#vim)
-- **Description**: a text editor
-- **Usage**: `vim [file]`
-    - For example, `vim test.py` would edit the file `test.py`
-    - Vim has a bunch of really cool features -- this is the minimum you need to know to use it:
-        - `i` = <ins>i</ins>nsert mode, lets you type and move around the file
-        - escape key = exit insert mode
-        - escape key + `:wq` = save and quit
-        - escape key + `:qa!` = quit without saving
-
-
