@@ -4,7 +4,7 @@ ls, cd, mv, python3, apt, git, bash, echo, cat, less, vim, code
 
 ## **Filesystem Commands**
 
-### `ls`
+### [`ls`](#ls)
 - **Description**: <ins>l</ins>i<ins>s</ins>ts files in a directory
 - **Usage**: `ls [directory]`
     - `[directory]` is optional, if not provided `ls` will list the contents of the current directory
@@ -26,7 +26,7 @@ ls, cd, mv, python3, apt, git, bash, echo, cat, less, vim, code
     -rw-rw-r--  1 bean bean     0 Jul  9 16:44 zebra
     ```
 
-### `cd`
+### [`cd`](#cd)
 - **Description**: <ins>c</ins>hange <ins>d</ins>irectory
 - **Usage**: `cd [directory]`
     - Special cases:
@@ -44,7 +44,7 @@ ls, cd, mv, python3, apt, git, bash, echo, cat, less, vim, code
     bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$
     ```
 
-### `mv`
+### [`mv`](#mv)
 - **Description**: <ins>m</ins>o<ins>v</ins>es things
 - **Usage**: `mv [source] [destination]`
 - **Example**:
@@ -59,7 +59,7 @@ ls, cd, mv, python3, apt, git, bash, echo, cat, less, vim, code
     another_file  move_me  this.is.a.file.txt
     ```
 
-### `pwd`
+### [`pwd`](#pwd)
 - **Description**: <ins>p</ins>rint <ins>w</ins>orking <ins>d</ins>irectory (prints the path to the directory you are in)
 - **Usage**: `pwd`
 - **Example**:
@@ -68,7 +68,7 @@ ls, cd, mv, python3, apt, git, bash, echo, cat, less, vim, code
     /home/bean/linux_commands_intro
     ```
 
-### `cat`
+### [`cat`](#cat)
 - **Description**: prints out a file's contents
 - **Usage**: `cat [file]`
 - **Example**:
@@ -81,7 +81,7 @@ ls, cd, mv, python3, apt, git, bash, echo, cat, less, vim, code
 
 ## **Text Editing/Programming**
 
-### `python3`
+### [`python3`](#python3)
 - **Description**: the Python interpreter!
 - **Usage**: `python3 [program]`
     - If `[program]` is not provided, a Python interpreter will show up. Otherwise, your file will be executed.
@@ -101,7 +101,7 @@ ls, cd, mv, python3, apt, git, bash, echo, cat, less, vim, code
     Hello World from a Python program
     ```
 
-### `vim`
+### [`vim`](#vim)
 - **Description**: a text editor
 - **Usage**: `vim [file]`
     - For example, `vim test.py` would edit the file `test.py`
