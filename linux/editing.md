@@ -21,7 +21,7 @@
     ```
 
 ### [`vim`](#vim)
-- **Description**: a text editor
+- **Description**: a text-based text editor
 - **Usage**: `vim [file]`
     - For example, `vim test.py` would edit the file `test.py`
     - Vim has a bunch of really cool features -- this is the minimum you need to know to use it:
@@ -30,4 +30,13 @@
         - escape key + `:wq` = save and quit
         - escape key + `:qa!` = quit without saving
 
+### [`code`](#code)
+- **Description**: Visual Studio Code (VS Code), a graphical text editor
+- **Usage**: `code [file or directory]`
+- **Example**:
+    ```bash
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~$ code 2023RobotCode/
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~$
+    ```
 
+    For editing robot code, you'll want to run VS Code inside Docker so you get autocompletion.
