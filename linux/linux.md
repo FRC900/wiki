@@ -2,7 +2,7 @@
 
 - ### [Linux Filesystem](filesystem.md)
 - ### [Text Editing/Programming](editing.md)
-- ### [Docker](docker.md)
+- ### [Miscellaneous](miscellaneous.md)
 
 ## General Tips
 - `[up arrow]` = pull up last command
