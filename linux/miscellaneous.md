@@ -56,3 +56,20 @@
     exit
     bean@bean-ThinkPad-X1-Yoga-Gen-6:~$ # same shell as original
     ```
+
+### [`grep`](#grep)
+- **Description**: searches for text
+- **Usage**: `grep "string to search for"`
+    - Often you pipe (`|`) the output of other commands into grep (see the example).
+- **Example**:
+    ```bash
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ cat hello
+    Hello striped zebras!
+    Here is another sentence
+    And another one!
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ cat hello | grep zebras
+    Hello striped zebras!
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$
+    ```
+
+[Home](/README.md)

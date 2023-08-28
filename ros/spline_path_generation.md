@@ -368,3 +368,5 @@ Most of the code was written from the description in these papers. Note that the
 [Lau, Sprunk, Burgard 2009](http://www2.informatik.uni-freiburg.de/~lau/paper/lau09iros.pdf "http://www2.informatik.uni-freiburg.de/~lau/paper/lau09iros.pdf")
 
 [Gloderer Hertle 2009](http://ais.informatik.uni-freiburg.de/teaching/ws09/robotics2/projects/mr2-p6-paper.pdf "http://ais.informatik.uni-freiburg.de/teaching/ws09/robotics2/projects/mr2-p6-paper.pdf")
+
+[Home](/README.md)

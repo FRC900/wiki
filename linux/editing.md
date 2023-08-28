@@ -40,3 +40,5 @@
     ```
 
     For editing robot code, you'll want to run VS Code inside Docker so you get autocompletion.
+
+[Home](/README.md)

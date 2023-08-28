@@ -56,13 +56,76 @@
 
     SUMMARY
     ========
-
+    ... lots more text ...
     ```
-
-
 
 ### [`rostopic`](#rostopic)
 - **Description**: topic-related ROS commands
-- **Usage**: TODO
+- **Usage**:
+    - `rostopic list`: lists all topics being published to
+    - `rostopic echo [topic]`: prints out all messages being published to `[topic]`
+    - `rostopic info [topic]`: prints out information about a topic
+    - `rostopic pub [topic] [message type] [message]`: publishes `[message]` (of type `[messgae type]`) to `[topic]`
+    - `rostopic hz [topic]`: calculates the publish rate (in <ins>Hz</ins>) of `[topic]`
 - **Example**:
-    TODO
+    ```bash
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rostopic list
+    /align/cmd_vel
+    /auto/auto_mode
+    /auto/cmd_vel
+    ... lots more topics ...
+    ```
+
+    ```bash
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rostopic echo /imu/zeroed_imu
+    header: 
+    seq: 24
+    stamp: 
+        secs: 0
+        nsecs: 690000000
+    frame_id: "imu"
+    orientation: 
+    x: -0.00038022196806286243
+    y: 0.0001624124748701506
+    z: 0.9999998834053025
+    w: -0.0002494851185626063
+    ... more message data ...
+    ---
+    ... next message ...
+    ```
+
+    ```bash
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rostopic info /auto/auto_mode
+    Type: behavior_actions/AutoMode
+
+    Publishers: None
+
+    Subscribers: 
+    * /candle_node (http://192.168.227.195:46065/)
+    ```
+
+    ```bash
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rostopic pub /auto/auto_mode behavior_actions/AutoMode "header:
+    seq: 0
+    stamp:
+        secs: 0
+        nsecs: 0
+    frame_id: ''
+    auto_mode: 5" 
+    publishing and latching message. Press ctrl-C to terminate
+    ```
+
+    ```bash
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rostopic hz /imu/zeroed_imu 
+    subscribed to [/imu/zeroed_imu]
+    average rate: 35.417
+        min: 0.000s max: 0.060s std dev: 0.01774s window: 35
+    average rate: 32.292
+        min: 0.000s max: 0.060s std dev: 0.01764s window: 63
+    ```
+
+### [`roswtf`](#roswtf)
+- **Description**: a ROS self-test tool, checks for errors
+- **Usage**: `roswtf`
+
+[Home](/README.md)

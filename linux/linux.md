@@ -9,3 +9,5 @@
 - `history` = view all commands typed
 - `!!` = previous command
 - `reset` = clear things
+
+[Home](/README.md)
