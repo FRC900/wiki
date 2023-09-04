@@ -50,6 +50,33 @@
     bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$
     ```
 
+### [`mkdir`](#mkdir)
+- **Description**: <ins>m</ins>a<ins>k</ins>es a <ins>dir</ins>ectory
+- **Usage**: `mkdir [directory_name]`
+- **Example**:
+    ```bash
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ ls
+    hello  hello_world.py  world  zebra
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ mkdir corns
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ ls
+    corns  hello  hello_world.py  world  zebra
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ ls corns
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$
+    ```
+
+### [`rmdir`](#rmdir)
+- **Description**: <ins>r</ins>e<ins>m</ins>oves an empty <ins>dir</ins>ectory
+- **Usage**: `rmdir [directory_name]`
+- **Example**:
+    ```bash
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ ls
+    corns  hello  hello_world.py  world  zebra
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ rmdir corns
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ ls
+    hello  hello_world.py  world  zebra
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$
+    ```
+
 ### [`mv`](#mv)
 - **Description**: <ins>m</ins>o<ins>v</ins>es things
 - **Usage**: `mv [source] [destination]`
@@ -63,6 +90,33 @@
     bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ cd world/
     bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro/world$ ls
     another_file  move_me  this.is.a.file.txt
+    ```
+
+### [`cp`](#cp)
+- **Description**: <ins>c</ins>o<ins>p</ins>ies things
+- **Usage**: `cp [source] [destination]`
+- **Example**:
+    ```bash
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ ls
+    file_to_copy  hello  hello_world.py  world
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ cp file_to_copy new_file
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ ls
+    file_to_copy  hello  hello_world.py  new_file  world
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$
+    ```
+
+### [`rm`](#rm)
+- **Description**: <ins>r</ins>e<ins>m</ins>oves things
+- **Usage**: `rm [file]`
+    - **USE WITH CAUTION**: to remove a directory and <ins>all of its contents</ins>, use `rm -r [directory]`
+- **Example**:
+    ```bash
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ ls
+    hello  hello_world.py  world  zebra
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ rm zebra
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$ ls
+    hello  hello_world.py  world
+    bean@bean-ThinkPad-X1-Yoga-Gen-6:~/linux_commands_intro$
     ```
 
 ### [`pwd`](#pwd)
