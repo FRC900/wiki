@@ -21,7 +21,7 @@
 
 ### [**Set up Docker container**](#set-up-docker-container)
 - `cd ~/2023RobotCode/docker`
-- `./docker-run`
+- `./docker-run` (if on an Apple silicon Mac, use `./docker-run-mac`) 
 - Wait for things to download
 
 ### [**How to enter Docker**](#how-to-enter-docker)
@@ -33,7 +33,7 @@ The general Docker reference is [here](/tools/docker.md).
 ### [**Set up submodules/.rosinstall**](#set-up-submodulesrosinstall)
 **Inside Docker:**
 - `cd 2023RobotCode/zebROS_ws`
-- `git submodule init --update`
+- `git submodule update --init`
 - `wstool update -t src`
 
 ### [**Build code**](#build-code)
