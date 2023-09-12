@@ -8,7 +8,7 @@
 - Restart your VM (for WSL, close and reopen your terminal)
 
 ### [**Make Docker autostart**](#docker-autostart)
-Note, only one of these options will make sense for your particular OS.  Pick the one that makes the most sense.
+Note, only one of these options will match your particular OS.  Pick the one that makes the most sense.
 - For native linux systems :
   - `sudo systemctl --now enable docker`
 - For Windows 11 WSL2
@@ -27,7 +27,8 @@ Note, only one of these options will make sense for your particular OS.  Pick th
 
 ### [**Install Git Large File Support**](#install-git-lfs)
 - `sudo apt install -y wget`
-- `cd &&\
+- ```
+   cd &&\
    wget https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-linux-amd64-v3.3.0.tar.gz &&\
    mkdir git-lfs-install &&\
    cd git-lfs-install &&\
@@ -36,7 +37,8 @@ Note, only one of these options will make sense for your particular OS.  Pick th
    sudo ./install.sh &&\
    cd &&\
    rm -rf git-lfs-linux-amd64-v3.3.0.tar.gz git-lfs-install &&\
-   git lfs install`
+   git lfs install
+```
 
 ### [**Set up GitHub SSH key**](#set-up-github-ssh-key)
 - `ssh-keygen -t ed25519 -C "your_email@example.com"`
