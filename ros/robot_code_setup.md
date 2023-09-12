@@ -13,16 +13,17 @@ Note, only one of these options will make sense for your particular OS.  Pick th
   - `sudo systemctl --now enable docker`
 - For Windows 11 WSL2
   - add to /etc/wsl.conf
-      `[boot]`
-
-      `systemd=true`
+      ```
+	  [boot]
+      systemd=true
+	  ```
 - For Windows 10 WSL2
   - add to ~/.profile
-    `if service docker status 2>&1 | grep -q "is not running"; then`
-
-    `  wsl.exe -d "${WSL_DISTRO_NAME}" -u root -e /usr/sbin/service docker start >/dev/null 2>&1`
-
-    `fi`
+    ```
+	if service docker status 2>&1 | grep -q "is not running"; then
+      wsl.exe -d "${WSL_DISTRO_NAME}" -u root -e /usr/sbin/service docker start >/dev/null 2>&1
+    fi
+	```
 
 ### [**Install Git Large File Support**](#install-git-lfs)
 - `sudo apt install -y wget`
