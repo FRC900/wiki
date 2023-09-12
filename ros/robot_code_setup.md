@@ -2,7 +2,7 @@
 
 ### [**Install Docker**](#install-docker)
 - `sudo apt update`
-- `sudo apt install- y curl`
+- `sudo apt install -y curl`
 - `curl https://get.docker.com | sudo sh`
 - `sudo gpasswd -a $USER docker`
 - Restart your VM (for WSL, close and reopen your terminal)
@@ -27,7 +27,7 @@ Note, only one of these options will match your particular OS.  Pick the one tha
 
 ### [**Install Git Large File Support**](#install-git-lfs)
 - `sudo apt install -y wget`
-- ```
+```
    cd &&\
    wget https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-linux-amd64-v3.3.0.tar.gz &&\
    mkdir git-lfs-install &&\
