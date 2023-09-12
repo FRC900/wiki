@@ -8,6 +8,7 @@ A collection of various wiki files, mainly related to programming.
     - [Miscellaneous](linux/miscellaneous.md)
 - ### [ROS](ros/ros.md)
     - [Why ROS?](ros/why_ros.md)
+    - [Robot Code Setup](ros/robot_code_setup.md)
     - [ROS Commands](ros/ros_commands.md)
     - [ROS Low-Level Control](ros/ros_low_level_control.md)
     - [Spline Path Generation](ros/spline_path_generation.md)
