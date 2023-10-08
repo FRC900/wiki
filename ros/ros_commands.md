@@ -65,7 +65,8 @@
     - `rostopic list`: lists all topics being published to
     - `rostopic echo [topic]`: prints out all messages being published to `[topic]`
     - `rostopic info [topic]`: prints out information about a topic
-    - `rostopic pub [topic] [message type] [message]`: publishes `[message]` (of type `[messgae type]`) to `[topic]`
+    - `rostopic pub [topic] [message type] [message]`: publishes `[message]` (of type `[message type]`) to `[topic]`
+      - Optional argument: `-r [frequency]` publishes the message continuously at `[frequency]` Hz
     - `rostopic hz [topic]`: calculates the publish rate (in <ins>Hz</ins>) of `[topic]`
 - **Example**:
     ```bash
