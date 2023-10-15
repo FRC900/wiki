@@ -124,6 +124,68 @@
     average rate: 32.292
         min: 0.000s max: 0.060s std dev: 0.01764s window: 63
     ```
+### [`rosnode`](#rosnode)
+- **Description**: node-related ROS commands
+- **Usage**:
+    - `rosnode list`: lists all topics being published to
+    - `rosnode info [node]`: prints out info about `[node]`
+    - `rosnode kill [node]`: kills a given node 
+    - `rosnode machine [IP]`: prints out all nodes on a given machine IP, if run without IP will print current machine IP
+
+- **Example**:
+    ```bash
+    ubuntu@dino-desktop:~$ rosnode list
+    /align_and_place_grid
+    /align_to_grid_closed_loop/align_to_grid_closed_loop_2023
+    /align_to_grid_closed_loop/x_position_pid
+    /align_to_grid_closed_loop/y_position_pid
+    ```
+
+    ```bash
+    ubuntu@dino-desktop:~$ rosnode info /align_and_place_grid
+    --------------------------------------------------------------------------------
+    Node [/align_and_place_grid]
+    Publications:
+     * /align_and_place_grid/feedback [behavior_actions/AlignAndPlaceGrid2023ActionFeedback]
+     * /align_and_place_grid/result [behavior_actions/AlignAndPlaceGrid2023ActionResult]
+    ...
+    
+    Subscriptions:
+     * /align_and_place_grid/cancel [actionlib_msgs/GoalID]
+     * /align_and_place_grid/goal [behavior_actions/AlignAndPlaceGrid2023ActionGoal]
+    ...
+    Services:
+     * /align_and_place_grid/get_loggers
+     * /align_and_place_grid/set_logger_level
+    
+    contacting node http://10.50.36.231:35239/ ...
+    Pid: 452
+    Connections:
+     * topic: /rosout
+        * to: /rosout
+        * direction: outbound (48389 - 10.50.36.231:47566) [11]
+        * transport: TCPROS
+     * topic: /align_to_grid_closed_loop/align_to_grid_closed_loop/goal
+        * to: /align_to_grid_closed_loop/align_to_grid_closed_loop_2023
+        * direction: outbound (48389 - 10.50.36.231:47598) [10]
+        * transport: TCPROS
+    ```
+
+    ```bash
+    ubuntu@dino-desktop:~$ rosnode kill /align_and_place_grid
+    killing /align_and_place_grid
+    killed
+    ```
+
+    ```bash
+    ubuntu@dino-desktop:~$ rosnode machine
+    10.50.36.231
+    ubuntu@dino-desktop:~$ rosnode machine 10.50.36.231
+    /align_to_grid_closed_loop/align_to_grid_closed_loop_2023
+    /align_to_grid_closed_loop/x_position_pid
+    /align_to_grid_closed_loop/y_position_pid
+    ... many more
+    ```
 
 ### [`roswtf`](#roswtf)
 - **Description**: a ROS self-test tool, checks for errors
