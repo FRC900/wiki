@@ -124,6 +124,37 @@
     average rate: 32.292
         min: 0.000s max: 0.060s std dev: 0.01764s window: 63
     ```
+
+### [`rosservice`](#rosservice)
+- **Description**: service-related ROS commands
+- **Usage**:
+    - `rosservice list`: lists all services being advertised
+    - `rosservice info [service_name]`: prints out information about a service
+    - `rosservice call [service_name] [arguments]`: calls the service advertised at `service_name` with `arguments` as the request data
+- **Example**:
+    ```bash
+   ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rosservice list
+    /auto/stop_auto
+    /candle_node/set_leds_green
+    /frcrobot_jetson/swerve_drive_controller/brake
+    /frcrobot_jetson/swerve_drive_controller/change_center_of_rotation
+    /imu/set_imu_zero
+    ... lots more services ...
+    ```
+
+    ```bash
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rosservice info /imu/set_imu_zero 
+    Node: /imu/imu_zero
+    URI: rosrpc://192.168.234.97:39273
+    Type: imu_zero_msgs/ImuZeroAngle
+    Args: angle
+    ```
+
+    ```bash
+    ubuntu@bean-ThinkPad-X1-Yoga-Gen-6:~$ rosservice call /imu/set_imu_zero "angle: 0.0"
+    (if the service had a response, it would be shown here)
+    ```
+
 ### [`rosnode`](#rosnode)
 - **Description**: node-related ROS commands
 - **Usage**:
