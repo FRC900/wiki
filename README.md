@@ -12,6 +12,7 @@ A collection of various wiki files, mainly related to programming.
     - [ROS Commands](ros/ros_commands.md)
     - [ROS Low-Level Control](ros/ros_low_level_control.md)
     - [Spline Path Generation](ros/spline_path_generation.md)
+    - [TensorFlow Intro & Labeling](ros/tensorflow_intro_and_labeling.md)
 - ### [Tools](tools/tools.md)
     - [Docker](tools/docker.md)
     - [Git](tools/git.md)
