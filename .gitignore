@@ -1,3 +1,4 @@
 *.sw?
 *~
-
+migration/migrator/target
+migration/migrator/cookies.txt
