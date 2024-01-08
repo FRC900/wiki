@@ -1,0 +1,190 @@
+**Where can I find the spreadsheet?**
+  * 2020 version [[https://docs.google.com/spreadsheets/d/13F8IV9iZD-i2abLa-gOx5mwJu_6TOJAD8C4jsf-JCh0/edit#gid=0|here]]
+  * Year Specific / 2020 / Mechanical
+
+**What is the PBS?**
+  * PBS stands for Product Breakdown System
+  * More often called Part Numbering Document
+  * A spreadsheet that assigns a number to every part on the robot and tracks many attributes
+
+**What does the part number mean?**
+  * A part number is a 6 digit code for every part, assembly, and subassembly in the robot 
+  * The format is ###-###
+     * Ex: 100-000
+     * Ex: 330-067
+  * The first 3 digits denote the assembly 
+     * First digit: top level assembly 
+        * 0: Full robot
+           * Ex: 000-000 Robot.sldasm
+        * 1: Chassis
+           * Ex: 100-000 Chassis.sldasm
+        * 2:
+        * 3:
+        * 4:
+        * Etc.
+     * The next two digits are the subassembly
+        * Ex: 110-000 corner 2019.sldasm
+        * Ex: 111-000 swerve module.sldasm
+  * The last 3 digits Identify the specific part
+     * 000 is ALWAYS an assembly
+        * Highlighted automatically based on assembly level
+     * Parts count up from 001
+
+**There’s a part number that doesn’t match this format!**
+  * Don’t panic, it’s a COTS or modified part
+  * Common formats from our suppliers:
+     * AM - #### 	AndyMark	AM
+     * 217 - ####	VexPro		VEX
+     * #####A###	McMaster-Carr	MCM 
+
+**What do the columns mean when I’m putting a part in?**
+  *** PBS #**
+     * Make a number using the system above for your part or assembly
+     * The part should be directly below the assembly it is in, add a new line
+  * **NAME**
+     * A description or descriptive name of the part
+     * It shouldn’t be too long
+     * Part of the name in CAD to make it easy to identify
+  * **Status**: Where is the part right now?
+     * N - NOT DESIGNED
+        * A part that is needed but is not in CAD yet
+     * P - DESIGN IN PROGRESS
+        * Something is in CAD, but not ready to be reviewed
+     * D - DESIGNED
+        * A model is in CAD and is ready to be reviewed
+     * RV - REVIEWED
+        * The part has been reviewed and approved
+     * RO - READY TO ORDER
+       * The part is ready to order and should go out on the next order 
+     * O - ORDERED
+        * The part has been ordered or sent to manufacture
+     * RE - RECEIVED
+        * The part has been received but not put into the robot or assembly 
+      * A - ASSEMBLED
+        * The part is in its assembly or on the robot
+     * X - DEPRECATED
+        * The part is no longer needed
+  * **Quant**: How many of the part are needed for that subsystem for ONE robot
+  * **Type**: 
+     * A - ASSEMBLY
+        * A collection of parts
+     * C - CUSTOM
+       * A part made from stock 
+     * P - PURCHASED
+        * aka COTS, a part that is bought and unmodified
+     * M - MODIFIED
+     * A COTS part with changes
+  * **Build**: What operation needs to be done to this part?
+     * N - None
+        * Used for COTS, unmodified parts	
+     * L - Lathe
+        * The part needs to be cut on the spinny thing
+     * F - Flat sheet
+        * Cut from sheet stock and kept flat
+        * Shopbot, laser, SMT
+     * B - Bent sheet
+         * Specifically sheet metal part with bends, manufactured at SMT (unless polycarb)
+     * M - Milled
+        * Cut on the mill at the lab (tube) or a more complex 3d operation (send to Matt)
+     * P - 3D Printed
+        * Additively manufactured from plastic
+     * O - Other
+        * Anything else
+  * **Stock Type**: What’s the part made of?
+     * None
+        * It’s unmodified
+     * Hex
+        * Hexagonal shaft
+     * Thunderhex
+        * Hexagonal shaft from vex that fits in a round bearings
+     * Al Tube
+        * Aluminum (6061-T6) extruded tube, most often rectangular
+     * Poly Tube
+        * Same as above, but polycarbonate
+     * Angle
+        * Extruded metal in the shape of a L
+     * C Channel
+        * Extruded metal in the shape of a C
+     * Al Plate
+        * Flat sheets of aluminum
+     * Poly Plate
+        * Flat sheets of polycarbonate
+     * PLA
+        * Printed on the Fusion printer in the lab
+     * Markforged
+        * Printed at Ty’s work or the new Markforged printer in the lab
+     * Other
+        * Modified parts, or something else
+  * **Stock Size**: which size of the type specified above is the part made from?
+     * Find what describes the part
+     * VF stands for Versa Frame
+  * **Machining Location**: Who is making the part?
+     * **None**: The part does not need any changes!
+     * **In house**: We can do it in hunt classroom the mechatronics lab
+        * Simple operations, printed on the Fusion
+     * **Fablab**: The Peter T. Haughton Fabrication Laboratory
+        * Lathe
+        * Laser
+        * Mill
+        * Miter saw
+        * ShopBot
+        * Assorted other 
+        * To prepare files:
+           * Depends on machine, model, drawing, dxf
+     * **SMT**: 
+        * Flat sheet with laser
+        * Bent sheet
+        * Powder coating
+        * To prepare files:
+          * Solidworks model
+          * drawing
+     * **Beachwood**
+        * Waterjet
+        * To prepare files:
+           * ???
+     * **ABCO**: 
+        * Laser
+        * Bent sheet
+        * Powder coating
+        * To prepare files:
+           * Solidworks model???
+     * **Glenn**
+        * ?????
+     * **Undecided**
+     * **Other**
+  * **Comment**: what’s important about the part?
+     * Does not need to be filled out
+
+
+
+**What do the other columns mean?**
+  * IF YOU ARE IN CAD, IGNORE THEM
+  * **Price per**
+        * The cost to buy the part in the real world
+  * **Total price**
+      *  Price per multiplied by quantity
+  * **CAWst**
+        * The cost the part costs for the BOM
+      *  If cost is < $5, then $0
+      *  Other exemptions exist (RTFM)
+  * **Total CAWst**
+     * CAWst multiplied by quantity
+  * **Supplier**
+     * If COTS or modified, who are we buying it from?
+     * NONE
+        * Custom part
+     * VEX
+        * [[https://www.vexrobotics.com/vexpro|Vex Pro]]
+     * AM
+        * [[https://www.andymark.com/|Andymark]]
+     * MCM
+        * [[https://www.mcmaster.com/|McMaster-Carr]]
+     * WCP
+        * [[http://www.wcproducts.net/|West Coast Products]]
+     * OTHER
+        * Something else
+  * **Purchase link**
+     * Where can this specific part be bought?
+
+[[https://docs.google.com/document/d/176in42DNSTILAErB6m_PZJM-9miAbqnCVVMThgJCUs8/edit|
+source]]

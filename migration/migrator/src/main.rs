@@ -17,11 +17,11 @@ const URL: &str = "https://wiki.team900.org";
 
 #[tokio::main]
 async fn main() {
-    let url = URL.parse().unwrap();
+    let base_url = URL.parse().unwrap();
     let cookie_jar = Jar::default();
 
     for cookie in COOKIES.lines() {
-        cookie_jar.add_cookie_str(cookie, &url);
+        cookie_jar.add_cookie_str(cookie, &base_url);
     }
 
     let client = ClientBuilder::default()
@@ -30,8 +30,9 @@ async fn main() {
         .build()
         .unwrap();
 
+    sleep().await;
     let sitemap_src = client
-        .get(url.join("doku.php?do=index").unwrap())
+        .get(base_url.join("doku.php?do=index").unwrap())
         .send()
         .await
         .unwrap()
@@ -40,6 +41,12 @@ async fn main() {
         .unwrap();
 
     let page_map = build_pages_list(&sitemap_src, &client).await;
+    println!("Got page map, delaying to let server cope...");
+    sleep().await;
+    sleep().await;
+    sleep().await;
+    sleep().await;
+    sleep().await;
 
     let cwd = env::current_dir().unwrap();
     let output = cwd.join("output");
@@ -47,6 +54,7 @@ async fn main() {
         fs::create_dir(&output).unwrap();
     }
     for (page_name, mut page_data) in page_map {
+        println!("[{page_name}]({:?})", page_data.url);
         let folder = output.join(page_name);
         if !folder.exists() {
             fs::create_dir(&folder).unwrap();
@@ -58,25 +66,39 @@ async fn main() {
 
         let mut tasks = JoinSet::new();
         for (name, url) in page_data.children {
-            let path = folder.join(name).with_extension("html");
+            let path = folder.join(&name).with_extension("html");
+            let mut url = base_url.join(&url).unwrap();
+            url.query_pairs_mut().append_pair("do", "edit");
             let client = client.clone();
+            println!("  [{name}]({url})");
             tasks.spawn(async move {
-                println!("{url}");
                 let mut file = OpenOptions::new()
                     .write(true)
                     .create(true)
                     .open(path)
                     .unwrap();
-                let page = client
-                    .get(URL.to_string() + &url)
-                    .send()
-                    .await
-                    .unwrap()
-                    .bytes()
-                    .await
+                sleep().await;
+                let page_source = Html::parse_document(
+                    &client
+                        .get(url.clone())
+                        .send()
+                        .await
+                        .unwrap()
+                        .text()
+                        .await
+                        .unwrap(),
+                );
+                let page_source = page_source
+                    .select(&Selector::parse("#wiki__text").unwrap())
+                    .next()
                     .unwrap();
-                file.write_all(&page).unwrap();
+                let text: String = page_source.text().collect();
+                file.write_all(text.as_bytes()).unwrap();
+                println!("Finished {url}");
             });
+        }
+        while !tasks.is_empty() {
+            tasks.join_next().await.unwrap().unwrap();
         }
     }
 }
@@ -127,6 +149,7 @@ async fn parse_subpages(
     page_name: String,
     page_map_url: String,
 ) -> (String, Vec<(String, String)>) {
+    sleep().await;
     let page_source = Html::parse_document(
         &client
             .get(URL.to_string() + &page_map_url)
@@ -162,6 +185,10 @@ async fn parse_subpages(
         });
 
     (page_name, subpage_urls)
+}
+
+async fn sleep() {
+    tokio::time::sleep(Duration::from_secs(2)).await;
 }
 
 #[derive(Default)]
