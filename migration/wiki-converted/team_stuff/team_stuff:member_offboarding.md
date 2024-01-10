@@ -1,4 +1,4 @@
-#= Old Team Member Offboarding #=
+#  Old Team Member Offboarding # 
   - Remove from Slack
   - Remove from Drive
   - Remove from Github

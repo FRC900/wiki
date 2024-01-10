@@ -1,4 +1,4 @@
-This is obsolete 1. use ddynamic_reconfigure code instead
+This is obsolete - use ddynamic_reconfigure code instead
 
 In ROS, dynamic reconfigure is used to set ros parameters from a GUI. The code sets up a list of parameters to expose to the gui via a config file. A callback is created which is called when those parameters are changed. The callback is responsible for copying updated values into variables in the program to implement the change.
 
@@ -6,9 +6,9 @@ The dynamic reconfigure wrapper simplifies setup for this process. The code is i
 
 Steps for using this -
 
-Create a config file. This is the same process as a standard ROS dynamic setup 1. http:*wiki.ros.org/dynamic_reconfigure/Tutorials/HowToWriteYourFirstCfgFile.
+Create a config file. This is the same process as a standard ROS dynamic setup - http://wiki.ros.org/dynamic_reconfigure/Tutorials/HowToWriteYourFirstCfgFile.
 
-Create a config object in your code. Include the .h file generated from the cfg file (typically something like <my_package/BlahConfig.h>). The config object type will then be BlahConfig 1. create a variable of that type. For example : `BlahConfig config_`
+Create a config object in your code. Include the .h file generated from the cfg file (typically something like <my_package/BlahConfig.h>). The config object type will then be BlahConfig - create a variable of that type. For example : `BlahConfig config_`
 
 In the init section of your program, add code to read from ROS parameters into the members of the config_ object you created above. This is similar to reading them into individual global or member vars using `nh.getParam`, but reading them into the config item will make it possible to keep the params read from config files in sync with params changed using dynamic reconfigure.
 

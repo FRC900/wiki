@@ -1,18 +1,18 @@
 Note : this might be obsolete. The Jetson can remotely launch nodes on the Rio as part of it starting up.
 
-#= Introduction #=
+#  Introduction # 
 
 This page covers roboRIO boot, the services that are started by default and how to disable them, and how to configure our code to start on boot.
 
-#= Init System #=
+#  Init System # 
 
-The roboRIO doesn’t use the new-fangled [[https:*freedesktop.org/wiki/Software/systemd/|systemd]] system for initialization that most recent Linux distributions have moved to but instead uses the good old fashioned [[https:*en.wikipedia.org/wiki/Init#SysV-style|System V init scripts]].
+The roboRIO doesn’t use the new-fangled [systemd](https://freedesktop.org/wiki/Software/systemd/) system for initialization that most recent Linux distributions have moved to but instead uses the good old fashioned [System V init scripts](https://en.wikipedia.org/wiki/Init#SysV-style).
 
-#= Default roboRIO init #=
+#  Default roboRIO init # 
 
 The roboRIO starts in runlevel 5 by default. (This is strange because most System V init-based Linux distributions use runlevel 5 for graphical, multi-user mode with networking. Runlevel 3 would be more appropriate, but it is what it is.)
 
-# Services started in runlevel 5 #
+##  Services started in runlevel 5 ## 
 
   - S01networking
   - S01nicgroup1createcpusets
@@ -46,11 +46,11 @@ The roboRIO starts in runlevel 5 by default. (This is strange because most Syste
   - S99rmnologin.sh
   - S99stop-bootlogd
 
-#= Launching our services #=
+#  Launching our services # 
 
-  All code is started remotely by the Jetson 1. no setup is needed on the RIO itself.
+  All code is started remotely by the Jetson - no setup is needed on the RIO itself.
 
-#= Disabling Unnecessary Services #=
+#  Disabling Unnecessary Services # 
 
 There are several services that run by default on the roboRIO that are unnecessary when running ROS. These services are `%%nilvrt%%`, `%%systemWebServer%%`, and others. This saves memory and CPU time that can be used for more useful purposes.
 

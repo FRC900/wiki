@@ -1,62 +1,62 @@
-#= DokuWiki #=
+#  DokuWiki # 
 
-[[doku>wiki:dokuwiki|{{wiki:dokuwiki-128.png }}]] DokuWiki is a simple to use and highly versatile Open Source [[wp>wiki]] software that doesn't require a database. It is loved by users for its clean and readable [[wiki:syntax]]. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in [[doku>acl|access controls]] and [[doku>auth|authentication connectors]] make DokuWiki especially useful in the enterprise context and the large number of [[doku>plugins]] contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.
+[{{wiki:dokuwiki-128.png }}](doku>wiki:dokuwiki) DokuWiki is a simple to use and highly versatile Open Source [wp>wiki](wp>wiki) software that doesn't require a database. It is loved by users for its clean and readable [wiki:syntax](wiki:syntax). The ease of maintenance, backup and integration makes it an administrator's favorite. Built in [access controls](doku>acl) and [authentication connectors](doku>auth) make DokuWiki especially useful in the enterprise context and the large number of [doku>plugins](doku>plugins) contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.
 
-Read the [[doku>manual|DokuWiki Manual]] to unleash the full power of DokuWiki.
+Read the [DokuWiki Manual](doku>manual) to unleash the full power of DokuWiki.
 
-# Download #
+##  Download ## 
 
-DokuWiki is available at https:*download.dokuwiki.org/
+DokuWiki is available at https://download.dokuwiki.org/
 
 
-# Read More #
+##  Read More ## 
 
-All documentation and additional information besides the [[syntax|syntax description]] is maintained in the DokuWiki at [[doku>|www.dokuwiki.org]].
+All documentation and additional information besides the [syntax description](syntax) is maintained in the DokuWiki at [www.dokuwiki.org](doku>).
 
 **About DokuWiki**
 
-  - [[doku>features|A feature list]] :!:
-  - [[doku>users|Happy Users]]
-  - [[doku>press|Who wrote about it]]
-  - [[doku>blogroll|What Bloggers think]]
-  - [[https:*www.wikimatrix.org/show/DokuWiki|Compare it with other wiki software]]
+  - [A feature list](doku>features) :!:
+  - [Happy Users](doku>users)
+  - [Who wrote about it](doku>press)
+  - [What Bloggers think](doku>blogroll)
+  - [Compare it with other wiki software](https://www.wikimatrix.org/show/DokuWiki)
 
 **Installing DokuWiki**
 
-  - [[doku>requirements|System Requirements]]
-  - [[https:*download.dokuwiki.org/|Download DokuWiki]] :!:
-  - [[doku>changes|Change Log]]
-  - [[doku>Install|How to install or upgrade]] :!:
-  - [[doku>config|Configuration]]
+  - [System Requirements](doku>requirements)
+  - [Download DokuWiki](https://download.dokuwiki.org/) :!:
+  - [Change Log](doku>changes)
+  - [How to install or upgrade](doku>Install) :!:
+  - [Configuration](doku>config)
 
 **Using DokuWiki**
 
-  - [[doku>syntax|Wiki Syntax]]
-  - [[doku>manual|The manual]] :!:
-  - [[doku>FAQ|Frequently Asked Questions (FAQ)]]
-  - [[doku>glossary|Glossary]]
+  - [Wiki Syntax](doku>syntax)
+  - [The manual](doku>manual) :!:
+  - [Frequently Asked Questions (FAQ)](doku>FAQ)
+  - [Glossary](doku>glossary)
 
 **Customizing DokuWiki**
 
-  - [[doku>tips|Tips and Tricks]]
-  - [[doku>Template|How to create and use templates]]
-  - [[doku>plugins|Installing plugins]]
-  - [[doku>development|Development Resources]]
+  - [Tips and Tricks](doku>tips)
+  - [How to create and use templates](doku>Template)
+  - [Installing plugins](doku>plugins)
+  - [Development Resources](doku>development)
 
 **DokuWiki Feedback and Community**
 
-  - [[doku>newsletter|Subscribe to the newsletter]] :!:
-  - [[doku>mailinglist|Join the mailing list]]
-  - [[https:*forum.dokuwiki.org|Check out the user forum]]
-  - [[doku>irc|Talk to other users in the IRC channel]]
-  - [[https:*github.com/splitbrain/dokuwiki/issues|Submit bugs and feature wishes]]
-  - [[doku>thanks|Some humble thanks]]
+  - [Subscribe to the newsletter](doku>newsletter) :!:
+  - [Join the mailing list](doku>mailinglist)
+  - [Check out the user forum](https://forum.dokuwiki.org)
+  - [Talk to other users in the IRC channel](doku>irc)
+  - [Submit bugs and feature wishes](https://github.com/splitbrain/dokuwiki/issues)
+  - [Some humble thanks](doku>thanks)
 
 
-# Copyright #
+##  Copyright ## 
 
-2004-2020 (c) Andreas Gohr <andi@splitbrain.org>((Please do not contact me for help and support -1. use the [[doku>mailinglist]] or [[https:*forum.dokuwiki.org|forum]] instead)) and the DokuWiki Community
+2004-2020 (c) Andreas Gohr <andi@splitbrain.org>((Please do not contact me for help and support -- use the [doku>mailinglist](doku>mailinglist) or [forum](https://forum.dokuwiki.org) instead)) and the DokuWiki Community
 
-The DokuWiki engine is licensed under [[https:*www.gnu.org/licenses/gpl.html|GNU General Public License]] Version 2. If you use DokuWiki in your company, consider [[doku>donate|donating]] a few bucks ;-).
+The DokuWiki engine is licensed under [GNU General Public License](https://www.gnu.org/licenses/gpl.html) Version 2. If you use DokuWiki in your company, consider [donating](doku>donate) a few bucks ;-).
 
-Not sure what this means? See the [[doku>faq:license|FAQ on the Licenses]].
+Not sure what this means? See the [FAQ on the Licenses](doku>faq:license).

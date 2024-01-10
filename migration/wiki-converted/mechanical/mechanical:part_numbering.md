@@ -1,5 +1,5 @@
 **Where can I find the spreadsheet?**
-  - 2020 version [[https:*docs.google.com/spreadsheets/d/13F8IV9iZD-i2abLa-gOx5mwJu_6TOJAD8C4jsf-JCh0/edit#gid=0|here]]
+  - 2020 version [here](https://docs.google.com/spreadsheets/d/13F8IV9iZD-i2abLa-gOx5mwJu_6TOJAD8C4jsf-JCh0/edit#gid=0)
   - Year Specific / 2020 / Mechanical
 
 **What is the PBS?**
@@ -33,8 +33,8 @@
 **There’s a part number that doesn’t match this format!**
   - Don’t panic, it’s a COTS or modified part
   - Common formats from our suppliers:
-     - AM 1. #### 	AndyMark	AM
-     - 217 1. ####	VexPro		VEX
+     - AM - #### 	AndyMark	AM
+     - 217 - ####	VexPro		VEX
      - #####A###	McMaster-Carr	MCM 
 
 **What do the columns mean when I’m putting a part in?**
@@ -46,49 +46,49 @@
      - It shouldn’t be too long
      - Part of the name in CAD to make it easy to identify
   - **Status**: Where is the part right now?
-     - N 1. NOT DESIGNED
+     - N - NOT DESIGNED
         - A part that is needed but is not in CAD yet
-     - P 1. DESIGN IN PROGRESS
+     - P - DESIGN IN PROGRESS
         - Something is in CAD, but not ready to be reviewed
-     - D 1. DESIGNED
+     - D - DESIGNED
         - A model is in CAD and is ready to be reviewed
-     - RV 1. REVIEWED
+     - RV - REVIEWED
         - The part has been reviewed and approved
-     - RO 1. READY TO ORDER
+     - RO - READY TO ORDER
        - The part is ready to order and should go out on the next order 
-     - O 1. ORDERED
+     - O - ORDERED
         - The part has been ordered or sent to manufacture
-     - RE 1. RECEIVED
+     - RE - RECEIVED
         - The part has been received but not put into the robot or assembly 
-      - A 1. ASSEMBLED
+      - A - ASSEMBLED
         - The part is in its assembly or on the robot
-     - X 1. DEPRECATED
+     - X - DEPRECATED
         - The part is no longer needed
   - **Quant**: How many of the part are needed for that subsystem for ONE robot
   - **Type**: 
-     - A 1. ASSEMBLY
+     - A - ASSEMBLY
         - A collection of parts
-     - C 1. CUSTOM
+     - C - CUSTOM
        - A part made from stock 
-     - P 1. PURCHASED
+     - P - PURCHASED
         - aka COTS, a part that is bought and unmodified
-     - M 1. MODIFIED
+     - M - MODIFIED
      - A COTS part with changes
   - **Build**: What operation needs to be done to this part?
-     - N 1. None
+     - N - None
         - Used for COTS, unmodified parts	
-     - L 1. Lathe
+     - L - Lathe
         - The part needs to be cut on the spinny thing
-     - F 1. Flat sheet
+     - F - Flat sheet
         - Cut from sheet stock and kept flat
         - Shopbot, laser, SMT
-     - B 1. Bent sheet
+     - B - Bent sheet
          - Specifically sheet metal part with bends, manufactured at SMT (unless polycarb)
-     - M 1. Milled
+     - M - Milled
         - Cut on the mill at the lab (tube) or a more complex 3d operation (send to Matt)
-     - P 1. 3D Printed
+     - P - 3D Printed
         - Additively manufactured from plastic
-     - O 1. Other
+     - O - Other
         - Anything else
   - **Stock Type**: What’s the part made of?
      - None
@@ -174,17 +174,17 @@
      - NONE
         - Custom part
      - VEX
-        - [[https:*www.vexrobotics.com/vexpro|Vex Pro]]
+        - [Vex Pro](https://www.vexrobotics.com/vexpro)
      - AM
-        - [[https:*www.andymark.com/|Andymark]]
+        - [Andymark](https://www.andymark.com/)
      - MCM
-        - [[https:*www.mcmaster.com/|McMaster-Carr]]
+        - [McMaster-Carr](https://www.mcmaster.com/)
      - WCP
-        - [[http:*www.wcproducts.net/|West Coast Products]]
+        - [West Coast Products](http://www.wcproducts.net/)
      - OTHER
         - Something else
   - **Purchase link**
      - Where can this specific part be bought?
 
-[[https:*docs.google.com/document/d/176in42DNSTILAErB6m_PZJM-9miAbqnCVVMThgJCUs8/edit|
-source]]
+[
+source](https://docs.google.com/document/d/176in42DNSTILAErB6m_PZJM-9miAbqnCVVMThgJCUs8/edit)

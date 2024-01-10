@@ -1,10 +1,10 @@
-#How To Write a Controller#
+## How To Write a Controller## 
 
 Review: The hardware_interface reads data from all the joints, storing it in state arrays like TalonStateInterface and JointStateInterface. Then, the controllers (loaded by the controller_manager) run an update, writing values to command arrays like TalonCommandInterface and PositionJointInterface. Finally, the hardware_interface writes the data from those command arrays to the actual hardware. This happens in a loop as long as the frcrobot_hardware_interface node is running.
 
 How to actually write a controller for a piece of hardware:
 
-1. Create a package with the type of controller -1. for example, "elevator controller" -1. and modify the CMakeLists.txt and package.xml so that the package is importing everything it needs.
+1. Create a package with the type of controller -- for example, "elevator controller" -- and modify the CMakeLists.txt and package.xml so that the package is importing everything it needs.
 
 2. In the include/controller_name directory of the package write your header file. Here's an example of a header file with everything you need to start out.
 <code cpp>

@@ -1,4 +1,4 @@
-==== Resetting Offsets ====
+###  Resetting Offsets ### 
 
 1. Set the wheels so that they're facing the front of the robot with the bevel gear facing right. 
 

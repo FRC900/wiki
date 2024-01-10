@@ -1,8 +1,8 @@
-#Networking Helpful Info#
+## Networking Helpful Info## 
 
 Are you trying to connect to a robot? Maybe even move it? Well, you're in the right place!
 
-===Connecting===
+#### Connecting#### 
 You can get access to the processors on the robot in a few ways. 
   - You can connect to its radio, which is as simple as connecting to the correct WiFi network. Its name will start with 900 and will probably have something to do with robots.
   - You can connect over an ethernet cord. You should plug into the switch, not the Jetson or the RIO itself.
@@ -16,6 +16,6 @@ Radio: 10.9.0.1
 
 So try 'ping 10.9.0.8' to see if you can reach the Jetson.
 
-===SSH===
+#### SSH#### 
 
-===Programming radios===
+#### Programming radios#### 

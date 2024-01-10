@@ -1,4 +1,4 @@
-#= Chairman's Questions #=
+#  Chairman's Questions # 
   - Does your team have a code of conduct?
   - How has your team worked with Durham schools?
   - Do you have training for students who mentor other teams?

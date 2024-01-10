@@ -1,4 +1,4 @@
-===How To Set Up USB Swap for the roboRIO===
+#### How To Set Up USB Swap for the roboRIO#### 
 1) Plug in the tiny tiny USB stick to a Linux computer. 
 
 2) Run in terminal:

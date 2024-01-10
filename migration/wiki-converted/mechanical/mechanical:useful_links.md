@@ -1,46 +1,46 @@
-#=Useful links#=
+# Useful links# 
 
 
-#Websites that have parts#
-https:*www.sunray-inc.com/online-store/
+## Websites that have parts## 
+https://www.sunray-inc.com/online-store/
 
-http:*www.vexrobotics.com/vexpro/
+http://www.vexrobotics.com/vexpro/
 
-http:*www.andymark.com/Default.asp
+http://www.andymark.com/Default.asp
 
-https:*www.mcmaster.com/
+https://www.mcmaster.com/
 
-http:*www.wcproducts.net/
+http://www.wcproducts.net/
 
-http:*findrobotparts.com/
+http://findrobotparts.com/
 
-http:*www.ctr-electronics.com/
+http://www.ctr-electronics.com/
 
-http:*ozzyboards.com/
+http://ozzyboards.com/
 
-http:*www.therobotspace.com/default.asp
+http://www.therobotspace.com/default.asp
 
-https:*www.competitionrobotparts.com/
+https://www.competitionrobotparts.com/
 
-#Websites that have reference info#
-[[http:*team610.com/wp-content/resources/Design%20TutorialsRev7.pdf|610 Design Doc]]
+## Websites that have reference info## 
+[610 Design Doc](http://team610.com/wp-content/resources/Design%20TutorialsRev7.pdf)
 
-[[https:*drive.google.com/file/d/1cFIq3OUQym00SJZaovHL29CDImvFMfVt/view?usp=sharing|Pneumatics Manual]]
+[Pneumatics Manual](https://drive.google.com/file/d/1cFIq3OUQym00SJZaovHL29CDImvFMfVt/view?usp=sharing)
 
-https:*wiki.team900.org/doku.php?id=start
+https://wiki.team900.org/doku.php?id=start
 
-https:*firstwiki.github.io/
+https://firstwiki.github.io/
 
-https:*firstfrc.blob.core.windows.net/frc2017/pneumatics-manual.pdf
+https://firstfrc.blob.core.windows.net/frc2017/pneumatics-manual.pdf
 
-[[https:*drive.google.com/file/d/1V6NFMyaXtdlVnkVdx797hFj2951DvSOq/view?usp=sharing|Mechanical Reference Guide]]
+[Mechanical Reference Guide](https://drive.google.com/file/d/1V6NFMyaXtdlVnkVdx797hFj2951DvSOq/view?usp=sharing)
 
-[[https:*johnvneun.com/calc/|JVN Gear Ratio Calculator]]
+[JVN Gear Ratio Calculator](https://johnvneun.com/calc/)
 
-[[https:*drive.google.com/drive/folders/1HLlBUwVaUtGmYGv00vrMFeG45XXfO54M|Mechanical Design Resources]]
-#Misc#
-[[https:*www.greybots.com/videos.html|973 RAMP Videos]]
+[Mechanical Design Resources](https://drive.google.com/drive/folders/1HLlBUwVaUtGmYGv00vrMFeG45XXfO54M)
+## Misc## 
+[973 RAMP Videos](https://www.greybots.com/videos.html)
 
-http:*www.mentorbuilt.com/?m=1
+http://www.mentorbuilt.com/?m=1
 
-https:*truefrc.cobaltrisen.com/predictions
+https://truefrc.cobaltrisen.com/predictions

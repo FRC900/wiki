@@ -7,7 +7,7 @@ Several benefits
   - Automatic handling of coprocessor nodes. For the past 5 seasons we've used various coprocessors to offload computationally intensive tasks from the Rio.  ROS provides transparent communication of data between different processors.
   - We consistently have a large software team.  ROS naturally encourages designs which split work into a number of separate processes (node), each of which communicates over well-defined interfaces.  Among the many benefits of such a design is that helps us split tasks out among the members of the team rather than concentrating the work into a few larger programs.
   - The same code which runs on the robot also runs on team members' laptops.  This allows for testing and integration work off the robot. Again, a huge benefit given that we have way more programmers than robots to test on.
-  - ROS introspection allows reading and writing the data which passes between nodes. This aids in testing and debugging 1. it naturally leads to unit-testing various nodes, or possibly scripting tests without having to bring up the entire code base
+  - ROS introspection allows reading and writing the data which passes between nodes. This aids in testing and debugging - it naturally leads to unit-testing various nodes, or possibly scripting tests without having to bring up the entire code base
   - ROS allows saving of all messages passing between nodes. This allows us to debug exactly what happened during a match, or even replay the data after fixing code to verify the fix.
   - ROS has a huge library of robotics-related packages. Since they use standard interfaces to communicate we can easily adapt them to our robot as needed.
 

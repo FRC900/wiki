@@ -1,6 +1,6 @@
-This page goes through a sample neural network definition. It doesn’t attempt to explain how a convolutional network works from the ground up 1. see [[Neural Net Resources|Neural Net Resources]] for a reading list.
+This page goes through a sample neural network definition. It doesn’t attempt to explain how a convolutional network works from the ground up - see [Neural Net Resources](Neural Net Resources) for a reading list.
 
-# Input Layers #
+##  Input Layers ## 
 
 These layers define the input to the network. In this case, the training data is a 28x28 image.
 
@@ -75,7 +75,7 @@ This identifies the name of the layer and type. The “bottom:” field is the i
 ```
 Learning rate modifiers for this particular convolutional block. The two sets of parameters are for the multiplicative weights and the added bias. The lr_mult is a multiplier applied to the globally-defined learning rate. The learning rate defines how quickly the learned values of the net are influenced by the error between the expected and acutal values of the net during training.
 
-The decay_mult is a multiplier applied to the global decay rate. The higher this parameter is, the more the network penalizes larger weight and bias values. Increasing this value can help reduce overfitting 1. but if that’s an issue it is probably best to start by increasing it in the global Caffe/DIGITS settings first.
+The decay_mult is a multiplier applied to the global decay rate. The higher this parameter is, the more the network penalizes larger weight and bias values. Increasing this value can help reduce overfitting - but if that’s an issue it is probably best to start by increasing it in the global Caffe/DIGITS settings first.
 
 ```
   convolution_param {
@@ -91,11 +91,11 @@ The decay_mult is a multiplier applied to the global decay rate. The higher this
   }
 }
 ```
-The important parameters for the convolutional block. There are 6 outputs 1. basically 6 different filters. Since each filter can learn weights separately they will come to identify different features in the input image.
+The important parameters for the convolutional block. There are 6 outputs - basically 6 different filters. Since each filter can learn weights separately they will come to identify different features in the input image.
 
 The kernel size is 3x3 pixels. While that might seem like a small receptive field, research has shown that instead of using bigger filters there is more benefit to just adding another layer of 3x3 filters rather than increasing the size of them.
 
-The stride is 1. That means the filters are run across every offset in the input image. A stride larger than 1 would skip over every N pixels 1. e.g. a stride of 2 would move the filter across the input in steps of 2 pixels.
+The stride is 1. That means the filters are run across every offset in the input image. A stride larger than 1 would skip over every N pixels - e.g. a stride of 2 would move the filter across the input in steps of 2 pixels.
 
 The fillers identify how the weights are initialized at the start of a run. Since our networks are relatively easy to train these aren’t too important.
 
@@ -141,7 +141,7 @@ layer {
 ```
 The only real difference from the previous conv layer is that it has 18 filters instead of the previous 6.
 
-Each filter here is also 3x3. The interesting part is that instead of having 3 channels (BGR) like the first conv layer, the input here is 6 channels 1. one for each of the filters of the previous conv layer. In other words, this is doing filtering on the output of the previous filtering step. That lets this deeper layer start to learn more complex representations by combining the results of the 1st layer of simple filters.
+Each filter here is also 3x3. The interesting part is that instead of having 3 channels (BGR) like the first conv layer, the input here is 6 channels - one for each of the filters of the previous conv layer. In other words, this is doing filtering on the output of the previous filtering step. That lets this deeper layer start to learn more complex representations by combining the results of the 1st layer of simple filters.
 
 ```
 layer {
@@ -156,7 +156,7 @@ layer {
   }
 }
 ```
-A pooling layer is used to reduce the size of the input. This is a max pool 1. it returns the largest value in within the kernel size set of pixels (3x3 in this example).
+A pooling layer is used to reduce the size of the input. This is a max pool - it returns the largest value in within the kernel size set of pixels (3x3 in this example).
 
 The stride is 2, so it skips over every other pixel in its input. This reduces the amount of data subsequent layers have to work with by a factor of 2 in each dimension.
 

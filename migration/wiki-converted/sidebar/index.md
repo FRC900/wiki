@@ -1,28 +1,28 @@
-#= Index #=
+#  Index # 
 
-[[Team Stuff]]
-  - [[Team Stuff:Fall Curriculum]]
-  - [[TIGER]]
-  - [[Team Stuff:Sponsors Master List|Sponsors List and Communication Guidelines]]
-  - [[Team Stuff:Member Onboarding]]
-  - [[Team Stuff:Member Offboarding]]
-  - [[team_stuff:Packing |Competition Packing Info]]
-  - [[Dictionary]]
-[[how_to|How-To]]
-  - [[how_to:whitepapers_new|Create a Whitepaper]]
-[[Programming]]
-  - [[programming:General Reference]]
-  - [[programming:Control Systems Programming|Control Systems]]
-  - [[programming:Vision Programming]]
-  - [[programming:Curriculum]]
-[[Mechanical]]
-  - [[mechanical:Machining]] 
-  - [[mechanical:useful_links|Useful Links]]
-[[Chairman's Award]]
-  - [[chairman's award:Past Entries]]
-  - [[chairman's award:Questions]]
-  - [[chairman's award:Outreach]]
-[[Strategy]]
-  - [[strategy:General]] 
-  - [[strategy:usefil_links|Useful Links]]
-[[Haptics]]
+[Team Stuff](Team Stuff)
+  - [Team Stuff:Fall Curriculum](Team Stuff:Fall Curriculum)
+  - [TIGER](TIGER)
+  - [Sponsors List and Communication Guidelines](Team Stuff:Sponsors Master List)
+  - [Team Stuff:Member Onboarding](Team Stuff:Member Onboarding)
+  - [Team Stuff:Member Offboarding](Team Stuff:Member Offboarding)
+  - [Competition Packing Info](team_stuff:Packing )
+  - [Dictionary](Dictionary)
+[How-To](how_to)
+  - [Create a Whitepaper](how_to:whitepapers_new)
+[Programming](Programming)
+  - [programming:General Reference](programming:General Reference)
+  - [Control Systems](programming:Control Systems Programming)
+  - [programming:Vision Programming](programming:Vision Programming)
+  - [programming:Curriculum](programming:Curriculum)
+[Mechanical](Mechanical)
+  - [mechanical:Machining](mechanical:Machining) 
+  - [Useful Links](mechanical:useful_links)
+[Chairman's Award](Chairman's Award)
+  - [chairman's award:Past Entries](chairman's award:Past Entries)
+  - [chairman's award:Questions](chairman's award:Questions)
+  - [chairman's award:Outreach](chairman's award:Outreach)
+[Strategy](Strategy)
+  - [strategy:General](strategy:General) 
+  - [Useful Links](strategy:usefil_links)
+[Haptics](Haptics)

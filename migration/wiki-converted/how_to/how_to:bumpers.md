@@ -1,4 +1,4 @@
-#= How to Create Bumper Numbers on Vinyl Cutter #=
+#  How to Create Bumper Numbers on Vinyl Cutter # 
 Font:
 Roboto
 396 pt 

@@ -1,8 +1,8 @@
-===Installing ROS On Turtlebot===
+#### Installing ROS On Turtlebot#### 
 
-Follow [[https:*github.com/FRC900/ros_tutorials/tree/master/turtlebot|this guide]] for the actual installation.
+Follow [this guide](https://github.com/FRC900/ros_tutorials/tree/master/turtlebot) for the actual installation.
 
-== Important Information ==
+#####  Important Information ##### 
 
   - ros-pi MAC Address (WiFi): `B8:27:EB:C1:EA:02`
   - ros-pi MAC Address (Ethernet): `B8:27:EB:94:Bf:57`

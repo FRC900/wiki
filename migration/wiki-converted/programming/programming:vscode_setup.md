@@ -1,4 +1,4 @@
-If not already installed, install vs code using the instructions here : https:*code.visualstudio.com/docs/setup/linux. Be sure to install outside the container.
+If not already installed, install vs code using the instructions here : https://code.visualstudio.com/docs/setup/linux. Be sure to install outside the container.
 
 Run `code` to start vs code.
 Hit ctrl-shift-X to bring up the extensions manager.  Search for and install the C++ and ROS extensions from microsoft. Also install the "ROS Package Variable" extension.

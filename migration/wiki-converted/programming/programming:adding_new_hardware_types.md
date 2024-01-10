@@ -2,7 +2,7 @@ We support a variety of different type of hardware, but each year there's always
 
 Typically this hardware will have support from either WPIlib or a vendor library. Those libraries will have functions to create, read and write to the hardware.  The code here will bridge the gap between those libraries and ROS controllers.
 
-# Basic Outline #
+##  Basic Outline ## 
 
 Code needs to be added to :
 
@@ -15,10 +15,10 @@ Code needs to be added to :
    - Publish state information (a state controller)
    - Simulate the hardware to some degree
 
-The rest of this is a tutorial on what to do. For the hows, review https:*wiki.team900.org/doku.php?id=programming:ros_low_level_control
+The rest of this is a tutorial on what to do. For the hows, review https://wiki.team900.org/doku.php?id=programming:ros_low_level_control
 
 
-# State Data Structures #
+##  State Data Structures ## 
 
 One of the jobs of the ROS hardware interface is to keep track of the state of all the hardware on the robot. It does this by reading values from the actual hardware and storing them in a buffer in memory.  The data stored by this buffer are specific to the type of hardware. One of the first tasks when adding new hardware is to define the data structure which holds all of the state needed by the hardware.
 
@@ -42,7 +42,7 @@ Although some of the first-written classes had this code defined inline, it is r
 
 Finally, a few lines of boilerplate code are needed to define a StateInterface and a RemoteStateInterface.  Easiest thing to do there is copy-paste from an existing file and change the types in the typedef StateHandle lines.
 
-#= Command Data Structures #=
+#  Command Data Structures # 
 
 The command data structure is used by the hardware interface to queue up commands written to the hardware. Controllers have access to write to this data structure in their update() method.  The write() function in the hardware interface takes the values in the data structure and actually writes the requested values to the hardware.
 
@@ -72,17 +72,17 @@ resetBlah sets the changed_ value to true.  This is used by the hardware interfa
 
 There's also boilerplate CommandInterface declarations.  Like the state code, easiest here is copy-paste from a working example and change the types and names to match the device being created.
 
-# Reading Config / Param Values #
+##  Reading Config / Param Values ## 
 
 This is code added to the ros_control_boilerplate frc_robot_interface code to load data from rosparms about the hardware.  
 
-First off, create some data structures to read the params into.  Look at frc_robot_interface.h, search for names_.  This will lead to the section of definitions of config data read for each type of hardware. New hardware will probably be similar 1. a name, a hardware address(s) of some sort, perhaps some other info.  Typically, aside from the name, look at what sort of info has to be passed to the constructor of the function used in the vendor library to create the hardware.
+First off, create some data structures to read the params into.  Look at frc_robot_interface.h, search for names_.  This will lead to the section of definitions of config data read for each type of hardware. New hardware will probably be similar - a name, a hardware address(s) of some sort, perhaps some other info.  Typically, aside from the name, look at what sort of info has to be passed to the constructor of the function used in the vendor library to create the hardware.
 
 Additionally, add a local_hardwares_ and local_updates_ vector.  This is used to coordinate data between the rio and jetson.
 
 Finally, add a num_devices_ var to match everything else.
 
-# Create State and Command Buffers #
+##  Create State and Command Buffers ## 
 
 In frcrobot_interface.hpp, create vectors of the state and command data structures.  For examples, search for State and Command, you'll find vectors of the already existing ones for previous hardware.
 
@@ -94,11 +94,11 @@ Next up, is the code to create buffers of the state and command classes written 
 
 Finally, at the bottom of init, call registerInterface for the state, command and remote_state interfaces added in the previous paragraph.  Use the existing code as an example.
 
-# Initialize the Hardware #
+##  Initialize the Hardware ## 
 
 This has two parts : creating an object for the hardware and actually initializing it.
 
-==== Hardware Data Structure ====
+###  Hardware Data Structure ### 
 
 Typically the low-level code will provide some sort of way to identify the hardware being accessed.  For example, for CTRE motor controllers it is a Talon C++ object. For certain WPIlib code, it is an integer index or perhaps an frc:: object used to control a particular type of hardware.  
 
@@ -106,13 +106,13 @@ Where the value is an integer (or wpilib handle, which is typically an int), the
 
 That vector is stored in frc_robot_interface.hpp.
 
-==== Init Code ====
+###  Init Code ### 
 
 Look in frc_robot_interface.cpp, init().  Here, you'll see code which loops over each case of num_devices_ and does a push_back of newly created hardware objects to the vector for each device type.
 
-Note the code which checks for device_local_hardware_ 1. if this is false the hardware isn't physically connected to the CPU (jetson or rio) the hardware interface code is running on.  In that case, a nullptr or invalid handle is pushed onto the vector as a placeholder. Since that particular hardware isn't accessed by the hardware interface there's no point in creating an object for it.
+Note the code which checks for device_local_hardware_ - if this is false the hardware isn't physically connected to the CPU (jetson or rio) the hardware interface code is running on.  In that case, a nullptr or invalid handle is pushed onto the vector as a placeholder. Since that particular hardware isn't accessed by the hardware interface there's no point in creating an object for it.
 
-# Read Code #
+##  Read Code ## 
 
 The code here is also in frc_robot_interface.cpp. Look in the read() function.
 
@@ -120,15 +120,15 @@ The code should loop over each device instance for the new device type. For each
 
 Note that for performance reasons, this should only be done for values which can change outside the control of the code. It shouldn't be used to update config values. That is, a config value written to the device should be what sets the devices state entry for that value. This saves time versus reading, say, every config value for every device.  This also holds true for outputs which are set by writing them to the device from code.
 
-On the other hand, sensor values are set from the changing physical state of the sensor and need to be read each time read() is called 1. there's no other way to read them.
+On the other hand, sensor values are set from the changing physical state of the sensor and need to be read each time read() is called - there's no other way to read them.
 
-=== Read Threads ===
+####  Read Threads #### 
 
 If reads take a long time, the code to read them should be moved into a separate thread. This thread will read from the hardware and update a buffer shared between the thread and read.  The read() code will simply copy the last update from this buffer. This means that if the thread takes a long time (relative to read() ) to update that shared buffer, the read function won't be blocked waiting for new data. Instead, it will just repeat the data from the most recent finished read.
 
 Look at the pdp code for an example. This section can be expanded as needed to document in more detail as it becomes necessary.
 
-# Writing to Hardware #
+##  Writing to Hardware ## 
 
 Like the read code, the write code should loop over each instance of the new device. The goal is to write and commands which have changed in the command buffer to the hardware. The general pattern is
 
@@ -136,7 +136,7 @@ Like the read code, the write code should loop over each instance of the new dev
 variable blah
 if (device_command_[i].blahChanged(blah))
 {
-    if (actual_hardware->SetBlah(blah) == SUCCESS)
+    if (actual_hardware->SetBlah(blah) #####  SUCCESS)
     {
         device_state_[i].setBlah(blah);
         ROS_INFO_STREAM("Set device blah to " << blah);
@@ -152,25 +152,25 @@ The outer-most if block will check to see if blah has been updated in the comman
 
 If the write to the hardware fails, resetBlah is called. This will force blahChanged() to return true on the next time through the write() function. This forces a retry of the hardware write.
 
-#= Publish State Information #=
+#  Publish State Information # 
 
 This involves creating a state controller.  The purpose of a state controller is to read the device_state and publish it on a topic. This lets nodes outside the hardware interface use that state.
 
-There are a number of state controllers already written 1. these should be used as a template for new code.
+There are a number of state controllers already written - these should be used as a template for new code.
 
-==== Create a Message ====
+###  Create a Message ### 
 
 The message will contain fields that correspond to each member var in the state data structure.  Since it is possible to have more than one of a given device type, each field will be an array of the correct type.
 
 Messages should be in a package separate from the controller itself.
 
-==== Create the Controller ====
+###  Create the Controller ### 
 
-Init will grab all of the names of the devices of the new type.  For each device, it will allocate space in each message field array 1. pushing back default values to them.
+Init will grab all of the names of the devices of the new type.  For each device, it will allocate space in each message field array - pushing back default values to them.
 
 Update will loop over each device instance. It will call the get() method on the device state for each state field and use that to set the message output.
 
-# Simulation #
+##  Simulation ## 
 For most cases, wpilib has sim support built in for new hardware. In that case, the wpi code handles simulation automatically. For cases where values are read from real hardware, code is added to frcrobot_sim_interface to create subscribers which allow us to provide simulated input values.  The callback for such a subscriber is responsible for calling HAL_SIM functions which set the value of the simulated hardware.
 
 For hardware without sim support, the following outline allows us to implement basic sim code.

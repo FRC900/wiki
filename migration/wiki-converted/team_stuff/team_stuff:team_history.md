@@ -1,7 +1,7 @@
-#= Team History #=
-  - [[https:*drive.google.com/drive/folders/0B7oPRg3XS_xfajFwb3QtaHVQSGc|T-shirts]]
+#  Team History # 
+  - [T-shirts](https://drive.google.com/drive/folders/0B7oPRg3XS_xfajFwb3QtaHVQSGc)
 
-#= 2002 #=
+#  2002 # 
 
   - Team Founded
   - Team Lead: Erica Wilson, senior
@@ -11,7 +11,7 @@
     - Picked the right strategy
   - Competition: NASA Langley/VCU
 
-#= 2003 #=
+#  2003 # 
 
   - Team Lead: Jinnie Boe
   - Robot
@@ -27,7 +27,7 @@
     - Peachtree Regional
       - Quarterfinals with 1007 and 1002
 
-#= 2004 #=
+#  2004 # 
 -Amanda Bedsaul
 -Gavin Boggs
 -Aaron Bradshaw
@@ -38,40 +38,40 @@
 -Brittany Spencer
 -Dwight Springthorpe
 -Alan Walker
-#= 2005 #=
+#  2005 # 
 
   - Team Lead: Marshall Massengill
   - Students:
-    - Marshall Massengill 1. Team Leader
-    - Wendell Wilson 1. Mechanical Team Leader
-    - Ray Doyle 1. Programming Team Leader
-    - Stephan Henrion 1. Electrical Team Leader
-    - Ryan Mclinko 1. CAD and Animation Team Leader
-    - Lauren LaMontagne 1. CAD Designer
-    - Toan Tran-Phu 1. Animation Designer
-    - Dwight Springthorpe 1. Fundraising Team Leader
-    - Casey Holder 1. Designer
-    - Gavin Boggs 1. Designer
-    - Alan Walker 1. PR
-    - Steven Truman 1. Mechanical Technician
-    - Jacey Wilson 1. Shop Quartermaster
-    - Patrick Snipes 1. Mechanical Assistant
-    - Bengie Reinhardt 1. Honorary Filer
-    - Matt Ball 1. Honorary Filer
+    - Marshall Massengill - Team Leader
+    - Wendell Wilson - Mechanical Team Leader
+    - Ray Doyle - Programming Team Leader
+    - Stephan Henrion - Electrical Team Leader
+    - Ryan Mclinko - CAD and Animation Team Leader
+    - Lauren LaMontagne - CAD Designer
+    - Toan Tran-Phu - Animation Designer
+    - Dwight Springthorpe - Fundraising Team Leader
+    - Casey Holder - Designer
+    - Gavin Boggs - Designer
+    - Alan Walker - PR
+    - Steven Truman - Mechanical Technician
+    - Jacey Wilson - Shop Quartermaster
+    - Patrick Snipes - Mechanical Assistant
+    - Bengie Reinhardt - Honorary Filer
+    - Matt Ball - Honorary Filer
   - Mentors:
-    - Chuck Britton 1. Shop Keeper
-    - Angela Winborne 1. Certified Adult
-    - Charlie Buckner 1. Engineer
-    - Anthony Harvell 1. Student-Mentor
-    - Jeff Bartlett 1. Machanist
-    - Erica Wilson 1. Student-Mentor
-    - Chip McFalls 1. Engineer
-    - Amanda Bedsaul 1. Student-Mentor
-    - Lauren Cohen 1. Student-Mentor
-    - Lee Coltrane 1. Software Developer
-    - Stu Wildman 1. Engineer
-    - Gary Helmick 1. Machinist
-    - Jennifer Kirchner 1. Student-Mentor
+    - Chuck Britton - Shop Keeper
+    - Angela Winborne - Certified Adult
+    - Charlie Buckner - Engineer
+    - Anthony Harvell - Student-Mentor
+    - Jeff Bartlett - Machanist
+    - Erica Wilson - Student-Mentor
+    - Chip McFalls - Engineer
+    - Amanda Bedsaul - Student-Mentor
+    - Lauren Cohen - Student-Mentor
+    - Lee Coltrane - Software Developer
+    - Stu Wildman - Engineer
+    - Gary Helmick - Machinist
+    - Jennifer Kirchner - Student-Mentor
   - Sponsors:
     - NCSSM
     - GlaxoSmithKline
@@ -79,36 +79,36 @@
     - Bayer Crop Science
     - South Data
 
-#= 2006 #=
+#  2006 # 
 
   - Team Lead: Steven Truman, Jacey Wilson
   - Students:
-    - Jacey Wilson 1. Fearless Leader
-    - Steven Truman 1. First Mate
-    - Jenn Pealer 1. CAD & Mechanical
-    - Katie Johnson 1. Main Programmer
-    - Stephane Henrioni 1. PR and Electronics
-    - Patrick McKinnon 1. Main Mechanical
-    - Nathan Ellenfield 1. Website Developer
-    - Matt Scott 1. Animation
-    - Alex Calhoun 1. Shirt Designer
-    - Benji Reinhardt 1. Formula Writer
-    - Wesley Johnson 1. Machinist
-    - Zach Hackney 1. Mechanical
-    - Cameron Dowless 1. Mechanical
-    - Sagar Idurkhya 1. Programmer
-    - Lexxy Jay 1. Mechanical
-    - Lauren Lamontagne 1. CAD
-    - Ray Doyle 1. Programmer
-    - Alexander Hill 1. Programmer
+    - Jacey Wilson - Fearless Leader
+    - Steven Truman - First Mate
+    - Jenn Pealer - CAD & Mechanical
+    - Katie Johnson - Main Programmer
+    - Stephane Henrioni - PR and Electronics
+    - Patrick McKinnon - Main Mechanical
+    - Nathan Ellenfield - Website Developer
+    - Matt Scott - Animation
+    - Alex Calhoun - Shirt Designer
+    - Benji Reinhardt - Formula Writer
+    - Wesley Johnson - Machinist
+    - Zach Hackney - Mechanical
+    - Cameron Dowless - Mechanical
+    - Sagar Idurkhya - Programmer
+    - Lexxy Jay - Mechanical
+    - Lauren Lamontagne - CAD
+    - Ray Doyle - Programmer
+    - Alexander Hill - Programmer
   - Mentors:
-    - Chuck Britton 1. Shop Keeper
-    - Lee Coltrane 1. Software Developer
-    - Chip Mcfalls 1. Engineer
-    - Charlie Buckner 1. Engineer
-    - Jeff Bartlett 1. Machinist
-    - Marshall Massengill 1. Do-It-All Mentor
-    - Angela Winborne 1. Official Adult
+    - Chuck Britton - Shop Keeper
+    - Lee Coltrane - Software Developer
+    - Chip Mcfalls - Engineer
+    - Charlie Buckner - Engineer
+    - Jeff Bartlett - Machinist
+    - Marshall Massengill - Do-It-All Mentor
+    - Angela Winborne - Official Adult
   - Sponsors:
     - NCSSM
     - IBM
@@ -117,14 +117,14 @@
     - Ultimate Products
     - Bayer Crop Science
 
-#= 2007 #=
+#  2007 # 
 
-#= 2008 #=
+#  2008 # 
 
   - Students:
-    - Austin “Y” Page 1. Fearless Leader
-    - Kara Tinker 1. Fearless Leader
-    - Marty Goldsmith 1. Fearless Leader
+    - Austin “Y” Page - Fearless Leader
+    - Kara Tinker - Fearless Leader
+    - Marty Goldsmith - Fearless Leader
     - Alisha Pedzinski
     - Clint Miller
     - Daniel Ratzlaff
@@ -153,9 +153,9 @@
     - H & K Screen printing
     - Solidworks
 
-#= 2009 #=
+#  2009 # 
 
-#= 2010 #=
+#  2010 # 
 
   - Students:
     - Al-Malik Ali
@@ -202,7 +202,7 @@
     - David Ticehurst
     - Derek Wolfe
 
-#= 2011 #=
+#  2011 # 
 
   - Students:
     - Andy Bradshaw
@@ -243,7 +243,7 @@
     - Durham Public Schools
     - TechShop
 
-#= 2012 #=
+#  2012 # 
 
   - Students:
     - Arjun Adhia
@@ -302,31 +302,31 @@
     - ShopBot
     - Durham Public Schools
 
-#= 2013 #=
+#  2013 # 
   - Robot Names: 
     - Inky, Blinky
-#= 2014 #=
+#  2014 # 
   - Robot Names: 
     - Hot Sauce (Comp), Not Sauce (Practice)
-#= 2015 #=
+#  2015 # 
   - Robot Names: 
     - Go Big (Comp), Go Home (Practice), Nacho Cheese (Champs Bot)
-#= 2016 #=
+#  2016 # 
   - Robot Names: 
     - Knight (Comp), Kday (Practice)
-#= 2017 #=
+#  2017 # 
   - Robot Names: 
     - White Rabbit (Comp), Cheshire Cat (Practice)
 
-#= 2018 #=
+#  2018 # 
   - Robot Names: 
     - Red Line (Comp),  (Practice)
-#= 2019 #=
+#  2019 # 
   - Robot Names: 
     - Big Foot (Comp), Little Foot (Practice)
-#= 2019-2020 #=
+#  2019-2020 # 
 This year was interrupted due to Covid-19. Everything shut down right before our first competition and our robot was never given a name. 
-#= 2020-2021 #=
+#  2020-2021 # 
 
 The Designer’s Award
 This award celebrates a team’s outstanding success with the Game Design Challenge. The winner of this award was a strong candidate for other awards in this challenge category.

@@ -5,8 +5,8 @@ Log into the rio (ssh admin@10.9.0.2)
 ```bash
 mkdir build
 cd build
-wget https:*raw.githubusercontent.com/FRC900/rtc-bq32k-rRIO/master/Makefile
-wget https:*raw.githubusercontent.com/FRC900/rtc-bq32k-rRIO/master/rtc-bq32k.c
+wget https://raw.githubusercontent.com/FRC900/rtc-bq32k-rRIO/master/Makefile
+wget https://raw.githubusercontent.com/FRC900/rtc-bq32k-rRIO/master/rtc-bq32k.c
 opkg install gcc
 source /usr/local/natinst/tools/versioning_utils.sh 
 setup_versioning_env

@@ -1,7 +1,7 @@
-#= TIGER Main Page #=
-[[TIGER:Docs|TIGER:Docs]]
+#  TIGER Main Page # 
+[TIGER:Docs](TIGER:Docs)
 
-[[programming:tiger|TIGER Programming Documentation]]
+[TIGER Programming Documentation](programming:tiger)
 
 **Teams Added in 2018**
   - Gates County

@@ -1,4 +1,4 @@
-#= Our Sponsors #=
+#  Our Sponsors # 
   - **North Carolina School of Science and Math*- *Institutional Sponsor* 
   - **Northgate Mall*- *Institutional Sponsor*
   - **ABCO Automation*- *Gold Sponsor*
@@ -29,8 +29,8 @@
   - **ZenHub*- *Silver*
   - **Zubaz*- *Silver*
 
-#= Sponsor Stuff #=
-# Sponsor Order of Operations #
+#  Sponsor Stuff # 
+##  Sponsor Order of Operations ## 
 Once we have a new sponsor for our team, the sponsor order of operations is a great guideline for how to integrate them into our system as well as thank them for their contribution.
   - Get contact information and add to current list of sponsors
   - Put on website (based on level of contributions)
@@ -43,18 +43,18 @@ Once we have a new sponsor for our team, the sponsor order of operations is a gr
   - Ask them about potential sponsors, get referral
   - Ask them about mentoring (for volunteer hours! Do their companies offer a match?)
 
-# Sample Sponsor Phone Call Script #
+##  Sample Sponsor Phone Call Script ## 
 Below is an example of how to begin a phone call to a potential sponsor. 
 
 "Hello, my name is ________ and I am calling on behalf of my high school robotics team about a sponsorship opportunity for your business. FRC is a worldwide high school robotics competition that promotes STEM education through real world applications of science and technology. Our team, the Zebracorns, is based at the North Carolina School of Science and Mathematics in Durham, but we welcome all NC students. **(Say why you are interested in them specifically)**. We would love to send you a flyer for more information about our team. What would be the best way to contact you?"
 
-# Grant Searching Info #
+##  Grant Searching Info ## 
 Grants, specifically STEM related grants, are a relatively easy way for our team to get money. Grants are obtained usually obtained with submission of an application. The easiest way to find grants are through Google!
   - Google "STEM grants" or "STEM high school grants" anything along these lines and find grants that a high school robotics team would be eligible to apply for.
   - If you find a grant that looks applicable to our team, note the **due date*- as well as **the criteria for applying*- such as an application or essays.
   - Send any information to leadership@team900.org and the leadership team and mentors will determine whether the application is feasible.
 
-# Drafting Thank You Notes to Sponsors #
+##  Drafting Thank You Notes to Sponsors ## 
 Thank you notes to sponsors should highlight these things:
   - A thank you for whatever goods or services they are providing.
   - A brief description for what we plan on using their goods or services for (this is most applicable if their provisions are more generic).

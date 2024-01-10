@@ -41,15 +41,37 @@ fn parse_file(path: PathBuf, output: PathBuf) {
         .create(true)
         .open(output)
         .unwrap();
-    let contents = fs::read_to_string(path).unwrap();
-    let contents = contents.replace("=====", "#");
-    let contents = contents.replace("- ", "1. ");
-    let contents = contents.replace("* ", "- ");
-    let contents = contents.replace("//", "*");
-    let contents = contents.replace("''", "`");
-    let contents = contents.replace("<code bash>", "```bash");
-    let contents = contents.replace("<code>", "```");
-    let contents = contents.replace("</code>", "```");
+    file.set_len(0).unwrap();
+
+    let mut contents = fs::read_to_string(path).unwrap();
+    contents = contents.replace("======", "# ");
+    contents = contents.replace("=====", "## ");
+    contents = contents.replace("====", "### ");
+    contents = contents.replace("===", "#### ");
+    contents = contents.replace("==", "##### ");
+    contents = contents.replace("* ", "- ");
+    contents = contents.replace("://", ":\\");
+    contents = contents.replace("//", "*");
+    contents = contents.replace(":\\", "://");
+    contents = contents.replace("''", "`");
+    contents = contents.replace("<code bash>", "```bash");
+    contents = contents.replace("<code>", "```");
+    contents = contents.replace("</code>", "```");
+
+    while let Some(link_start) = contents.find("[[") {
+        let link_end = contents.find("]]").unwrap();
+        let link = &contents[link_start + 2..link_end];
+        let mut parts = link.split('|');
+
+        let url = parts.next().unwrap();
+        let new_link = if let Some(text) = parts.next() {
+            format!("[{text}]({url})")
+        } else {
+            format!("[{url}]({url})")
+        };
+
+        contents = contents[0..link_start].to_owned() + &new_link + &contents[link_end + 2..];
+    }
 
     file.write_all(contents.as_bytes()).unwrap();
 }

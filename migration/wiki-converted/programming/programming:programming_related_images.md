@@ -1,4 +1,4 @@
-#= Team 900s collection of programming images #=
+#  Team 900s collection of programming images # 
 The purpose of this page is to have easy access to useful or cool images related to programming ie. rqt_graph or other ROS images. Feel free to add any images you may have from this year.
 
 [{{:programming:img_0022.jpg?nolink&600|All the laptops at palmetto 2018}}]

@@ -1,9 +1,9 @@
- - [[http:*brohrer.github.io/how_convolutional_neural_networks_work.html|How do Convolutional Neural Networks work?]] is an interesting introduction
+ - [How do Convolutional Neural Networks work?](http://brohrer.github.io/how_convolutional_neural_networks_work.html) is an interesting introduction
     - The information is good, plus happily enough his example matches the net architecture we use for one of our neural nets for ball detection
     - FYI, what he calls normalization (applying max(0,x)) is what other people call an activation function or a non-linearity. I only point it out because normalization is used for other steps that can be applied to neural nets.
-    - This kind of issue is common 1. the terminology here isn’t completely standard. Know the concepts reasonably well, though, and the naming shouldn’t throw you off too much.
-  - [[http:*cs231n.github.io/|Standford CS231n Notes]] is a more math-based overview
-  - [[https:*www.youtube.com/playlist?list=PLlJy-eBtNFt6EuMxFYRiNRS07MCWN5UIA|CS231n Course Videos]] for a more detailed look. I’d ignore the nitty-gritty details of how back-propagation works and focus more on the big picture
+    - This kind of issue is common - the terminology here isn’t completely standard. Know the concepts reasonably well, though, and the naming shouldn’t throw you off too much.
+  - [Standford CS231n Notes](http://cs231n.github.io/) is a more math-based overview
+  - [CS231n Course Videos](https://www.youtube.com/playlist?list=PLlJy-eBtNFt6EuMxFYRiNRS07MCWN5UIA) for a more detailed look. I’d ignore the nitty-gritty details of how back-propagation works and focus more on the big picture
   - http:%%*%%neuralnetworksanddeeplearning.com/ has some more good information including examples using nets for handwriting recognition
   - http:%%*%%course.fast.ai/ has some practical advice for using neural nets
   - Strictly for entertainment value, but trained networks can be run “backwards” to generate images similar to things they’ve learned to recognize : https:%%*%%github.com/jcjohnson/neural-style

@@ -1,9 +1,9 @@
-#= How-To #=
+#  How-To # 
 
 This is a series of How-To documents
 
-- [[how_to:whitepapers_new|How to Create a WhitePaper]]
+- [How to Create a WhitePaper](how_to:whitepapers_new)
 
-- [[how_to:bumpers|How to Cut Bumper Numbers on Vinyl Cutter]]
+- [How to Cut Bumper Numbers on Vinyl Cutter](how_to:bumpers)
 
-- [[how_to:ds_stream|How to set up the DS Stream]]
+- [How to set up the DS Stream](how_to:ds_stream)

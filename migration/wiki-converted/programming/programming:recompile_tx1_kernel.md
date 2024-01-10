@@ -3,7 +3,7 @@
 
 ----
 
-#= Recompiling the TX1 Kernel #=
+#  Recompiling the TX1 Kernel # 
 
 This was done on a ubuntu 16.04 system running as a virtual machine. You need 50GB of freespace, FYI. It’s a cross-compile environment and makes this whole process a lot faster.
 
@@ -47,10 +47,10 @@ Reboot and deal with the inevitable errors the first time you do this.
 
 Useful links:
 
-  - L4T Documentation: http:*developer.nvidia.com/embedded/dlc/l4t-documentation-24-2-1 (also has the source_sync script and the scripts for building the toolchains)
-  - https:*devtalk.nvidia.com/default/topic/929186/jetson-tx1/jetson-tx1-kernel-compilation/
-  - http:*developer.ridgerun.com/wiki/index.php?title=Compiling_Tegra_X1_source_code
-  - https:*devtalk.nvidia.com/default/topic/930642/how-to-compile-tegra-x1-source-code/
-  - https:*devtalk.nvidia.com/default/topic/917386/usb-3-0-port-unstable-on-jetson-tx1-/
-  - https:*devtalk.nvidia.com/default/topic/973034/jetson-tx1/problem-with-intel-600p-nvme-ssd
-  - http:*codegists.com/code/cross-compile-windows-dll-in-linux/
+  - L4T Documentation: http://developer.nvidia.com/embedded/dlc/l4t-documentation-24-2-1 (also has the source_sync script and the scripts for building the toolchains)
+  - https://devtalk.nvidia.com/default/topic/929186/jetson-tx1/jetson-tx1-kernel-compilation/
+  - http://developer.ridgerun.com/wiki/index.php?title=Compiling_Tegra_X1_source_code
+  - https://devtalk.nvidia.com/default/topic/930642/how-to-compile-tegra-x1-source-code/
+  - https://devtalk.nvidia.com/default/topic/917386/usb-3-0-port-unstable-on-jetson-tx1-/
+  - https://devtalk.nvidia.com/default/topic/973034/jetson-tx1/problem-with-intel-600p-nvme-ssd
+  - http://codegists.com/code/cross-compile-windows-dll-in-linux/

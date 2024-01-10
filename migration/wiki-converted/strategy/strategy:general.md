@@ -1,3 +1,3 @@
-[[strategy:krawler|strategy:krawler Directions from old wiki]]
+[strategy:krawler Directions from old wiki](strategy:krawler)
 
-[[strategy:SchemaCrawler|Creating an SQL Database diagram]]
+[Creating an SQL Database diagram](strategy:SchemaCrawler)
