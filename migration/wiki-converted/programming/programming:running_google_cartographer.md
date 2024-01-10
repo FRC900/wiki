@@ -10,7 +10,8 @@ Cartographer expects to be installed into a directory tree under the base zebROS
 ```bash
 catkin_make_isolated --install --use-ninja
 ```
-If you get errors about previous builds using cmake, delete the old build and devel subdirs and try again. .\\
+If you get errors about previous builds using cmake, delete the old build and devel subdirs and try again. .
+
 Once this is complete, run
 
 ```bash

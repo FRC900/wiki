@@ -2,7 +2,7 @@
 
 Here you can find information about our vision programming, ranging from basic object detection in LabVIEW to Neural Networks, and things in between such as OpenCV object detection using cascade classifiers.
 
-*- TODO: Make this not super outdated, port some over to general programming **
+** TODO: Make this not super outdated, port some over to general programming **
 
 --------------------------------------
 

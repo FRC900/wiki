@@ -20,13 +20,20 @@ There are a number of ways to start a pull request.
 
 The first is offered when initially pushing a new branch. As an example :
 
-`kjaget@ubuntu:~/2020Offseason$ git push origin pr_test \\
-remote: \\
-remote: Create a pull request for 'pr_test' on GitHub by visiting://\
-remote:      https://github.com/FRC900/2020Offseason/pull/new/pr_test\\
-remote: \\
-To github.com:FRC900/2020Offseason.git\\
- - [new branch]        pr_test -> pr_test\\
+`kjaget@ubuntu:~/2020Offseason$ git push origin pr_test 
+
+remote: 
+
+remote: Create a pull request for 'pr_test' on GitHub by visiting:
+
+remote:      https://github.com/FRC900/2020Offseason/pull/new/pr_test
+
+remote: 
+
+To github.com:FRC900/2020Offseason.git
+
+ - [new branch]        pr_test -> pr_test
+
 `
 
 Here, a new branch called pr_test was pushed to github for the first time.  Part of the status message includes a link which will open the PR create dialog for that branch. Enterprising students will notice that the only thing that changes in the link is the branch name...

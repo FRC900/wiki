@@ -44,12 +44,15 @@ fn parse_file(path: PathBuf, output: PathBuf) {
     file.set_len(0).unwrap();
 
     let mut contents = fs::read_to_string(path).unwrap();
+    contents = contents.replace("\\\\", "\n");
     contents = contents.replace("======", "# ");
     contents = contents.replace("=====", "## ");
     contents = contents.replace("====", "### ");
     contents = contents.replace("===", "#### ");
     contents = contents.replace("==", "##### ");
+    contents = contents.replace("**", "\\\\");
     contents = contents.replace("* ", "- ");
+    contents = contents.replace("\\\\", "**");
     contents = contents.replace("://", ":\\");
     contents = contents.replace("//", "*");
     contents = contents.replace(":\\", "://");

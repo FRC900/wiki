@@ -1,6 +1,6 @@
 #  Deploying Code # 
 
-To get code to run on the robot, you must **deploy*- it to the robot. Steps are below for the Jetson or the RIO. You usually only need to mess with the Jetson to deploy and run code.
+To get code to run on the robot, you must **deploy** it to the robot. Steps are below for the Jetson or the RIO. You usually only need to mess with the Jetson to deploy and run code.
 
 ###  Jetson (aka what people generally mean when you just hear "deploy code") ### 
 

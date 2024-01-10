@@ -4,10 +4,10 @@
 
 ##  Basic Text Formatting ## 
 
-DokuWiki supports **bold**, *italic*, __underlined__ and `monospaced` texts. Of course you can **__*`combine`*__*- all these.
+DokuWiki supports **bold**, *italic*, __underlined__ and `monospaced` texts. Of course you can **__*`combine`*__** all these.
 
   DokuWiki supports **bold**, *italic*, __underlined__ and `monospaced` texts.
-  Of course you can **__*`combine`*__*- all these.
+  Of course you can **__*`combine`*__** all these.
 
 You can use <sub>subscript</sub> and <sup>superscript</sup>, too.
 
@@ -17,15 +17,23 @@ You can mark something as <del>deleted</del> as well.
 
   You can mark something as <del>deleted</del> as well.
 
-**Paragraphs*- are created from blank lines. If you want to **force a newline*- without a paragraph, you can use two backslashes followed by a whitespace or the end of line.
+**Paragraphs** are created from blank lines. If you want to **force a newline** without a paragraph, you can use two backslashes followed by a whitespace or the end of line.
 
-This is some text with some linebreaks\\ Note that the
-two backslashes are only recognized at the end of a line\\
-or followed by\\ a whitespace \\this happens without it.
+This is some text with some linebreaks
+ Note that the
+two backslashes are only recognized at the end of a line
 
-  This is some text with some linebreaks\\ Note that the
-  two backslashes are only recognized at the end of a line\\
-  or followed by\\ a whitespace \\this happens without it.
+or followed by
+ a whitespace 
+this happens without it.
+
+  This is some text with some linebreaks
+ Note that the
+  two backslashes are only recognized at the end of a line
+
+  or followed by
+ a whitespace 
+this happens without it.
 
 You should use forced newlines only if really needed.
 
@@ -76,9 +84,11 @@ DokuWiki supports [doku>Interwiki](doku>Interwiki) links. These are quick links 
 
 ###  Windows Shares ### 
 
-Windows shares like [this](\\server\share) are recognized, too. Please note that these only make sense in a homogeneous user group like a corporate [wp>Intranet](wp>Intranet).
+Windows shares like [this](
+server\share) are recognized, too. Please note that these only make sense in a homogeneous user group like a corporate [wp>Intranet](wp>Intranet).
 
-  Windows Shares like [this](\\server\share) are recognized, too.
+  Windows Shares like [this](
+server\share) are recognized, too.
 
 Notes:
 

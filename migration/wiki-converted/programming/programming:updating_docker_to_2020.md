@@ -2,9 +2,9 @@
 
 First, you want to exit all of the docker containers that you're currently running. Do this by running Ctrl-D or `exit` from inside the docker container.
 
-From your local machine (NOT inside the docker container), you want to delete all your frc docker containers.  **NOTE*- : If you have tensorflow containers do not remove those. Run `docker ps -a` to list all of the current frc containers. For each of these containers, run `docker stop <CONTAINER ID>` then `docker rm <CONTAINER ID>`. 
+From your local machine (NOT inside the docker container), you want to delete all your frc docker containers.  **NOTE** : If you have tensorflow containers do not remove those. Run `docker ps -a` to list all of the current frc containers. For each of these containers, run `docker stop <CONTAINER ID>` then `docker rm <CONTAINER ID>`. 
 
-Then, you want to delete your frc docker images. **NOTE*- : Again, if you have tensorflow docker images do not remove them.  Run `docker image list` to list all of the current images. For each of the frc images, run `docker image rm <IMAGE ID>`.
+Then, you want to delete your frc docker images. **NOTE** : Again, if you have tensorflow docker images do not remove them.  Run `docker image list` to list all of the current images. For each of the frc images, run `docker image rm <IMAGE ID>`.
 
 From your home directory, run `git clone git@github.com:FRC900/2023RobotCode.git`. If the 2023RobotCode already exists, change directories into 2023RobotCode and run `git pull -r`.  Change directories into 2023RobotCode/docker, then run `./docker-run`. Wait for this to download -- it'll take a while.
 

@@ -37,7 +37,7 @@ sudo true
 tensorflow_workspace/setup.sh
 tensorflow_workspace/docker-run```
 
-**Note*- - this is a different container than the normal one used to e.g. build robot code. Be sure to run docker-run from the directory mentioned above.
+**Note** - this is a different container than the normal one used to e.g. build robot code. Be sure to run docker-run from the directory mentioned above.
 	
 This will pull the tensorflow container and start up a shell in it.  Like the RobotCode, this docker-run script maps the tensorflow_workspace from outside the container into it. Files changed in that directory tree inside the container will be visible outside it, and vice-versa 
 
@@ -50,7 +50,7 @@ make
 
 ##  Finding Videos ## 
 
-**Note*- - for now there are already a lot of good quality images in our repo that need to be labeled. If you know of a good video we just can't live without, grab it. But for now, the priority should be labeling the ones we have.
+**Note** - for now there are already a lot of good quality images in our repo that need to be labeled. If you know of a good video we just can't live without, grab it. But for now, the priority should be labeling the ones we have.
 
 Find a good video on youtube of the field.  This will preferably be decent video quality, shot from around robot height, and obviously have the objects we care about in it.
 

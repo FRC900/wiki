@@ -1,6 +1,7 @@
 #  Running/Testing Controllers # 
 
-This page assumes://\
+This page assumes:
+
   - You've defined the joints being controlled, in `zebROS_ws/ros_control_boilerplate/config/2019_compbot_base_jetson.yaml` - note: year will change
   - You've written your controller in a branch and it compiles
 
@@ -13,7 +14,8 @@ your_mechanism_controller:
     type: your_package/YourClassController
 ```
 
-E.g.\\
+E.g.
+
 {{:programming:panel_intake_controller.png?nolink&600}}
 
 If you're controlling a motor, you need to add additional information for each motor:
@@ -31,7 +33,8 @@ your_mechanism_controller:
 
 Here, `mechanism_joint` is the thing your cpp file references, which points to the name `mechanism`. `mechanism` refers to a subset of config values specific to the motor. The `joint` value in this subset needs to match the name of the joint from the hardware list.
 
-E.g.\\
+E.g.
+
 {{:programming:cargo_intake_params.png?nolink&1000|}}
 
 Second, we need to tell the computer to launch your controller. Enter the file `zebROS_ws/controller_node/launch/2019_compbot_jetson.launch`. Find the controller manager node, and add your controller to the list of controllers to "spawn." Example:
@@ -42,7 +45,8 @@ You do not need to recompile code after making these two changes (yaml files and
 
 ###  Testing the Controller in Sim ### 
 
-Before using the controller on the physical robot, we test it in simulation to make sure everything works fine. On your computer, launch robot code in sim://\
+Before using the controller on the physical robot, we test it in simulation to make sure everything works fine. On your computer, launch robot code in sim:
+
 `roslaunch controller_node 2019_compbot_combined.launch hw_or_sim:=sim`
 
 In a second terminal window, rostopic echo either `frcrobot_jetson/joint_states` or `frcrobot_jetson/talon_states` depending on if you're testing a piston or a motor.

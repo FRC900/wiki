@@ -20,10 +20,14 @@ This menu will allow you to assign your tracks to different channels, also on th
 
 
 ### Playing Sounds With Python### 
-import sounddevice as sd \\
+import sounddevice as sd 
+
 import soundfile as sf
 
-data, fs = sf.read(r"filename",dtype='float32') \\
-sd.query_devices() \\
-sd.play(data,fs,device=int) \\
+data, fs = sf.read(r"filename",dtype='float32') 
+
+sd.query_devices() 
+
+sd.play(data,fs,device=int) 
+
 sd.stop()

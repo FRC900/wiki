@@ -8,9 +8,9 @@ If you plan on working with ROS  or with OpenCV on either the Vision or Control 
 
 ### Install VirtualBox
 
-**Mac Users:*- Please download VirtualBox at this [link](http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-OSX.dmg). This link will start the download automatically. Follow the installation process to completion.
+**Mac Users:** Please download VirtualBox at this [link](http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-OSX.dmg). This link will start the download automatically. Follow the installation process to completion.
 
-**Windows Users:*- Please download VirtualBox at this [link](http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-Win.exe). This link will start the download automatically. Follow the installation process to completion.
+**Windows Users:** Please download VirtualBox at this [link](http://download.virtualbox.org/virtualbox/5.2.2/VirtualBox-5.2.2-119230-Win.exe). This link will start the download automatically. Follow the installation process to completion.
 
 ### Set Up A New Virtual Hard Drive
 

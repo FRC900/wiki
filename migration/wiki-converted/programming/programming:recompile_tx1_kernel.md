@@ -7,13 +7,17 @@
 
 This was done on a ubuntu 16.04 system running as a virtual machine. You need 50GB of freespace, FYI. It’s a cross-compile environment and makes this whole process a lot faster.
 
-  - Start by pulling down the sources and the L4T documentation from Nvidia (see links below).\\
+  - Start by pulling down the sources and the L4T documentation from Nvidia (see links below).
 
-  - Read the “Building the NVIDIA Kernel” section.\\
 
-  - It will point you to downloading and installing toolchains for ARM64.\\
+  - Read the “Building the NVIDIA Kernel” section.
 
-  - You need BOTH toolchains.\\
+
+  - It will point you to downloading and installing toolchains for ARM64.
+
+
+  - You need BOTH toolchains.
+
 
   - Before you run the setup scripts for the toolchains, run this to get the extra packages: “apt-get install gawk texinfo automake libtool g++”.
 

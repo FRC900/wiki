@@ -4,7 +4,8 @@ The purpose of this page is to introduce the most useful git commands and best p
 Presentation with introductory Git information: https://docs.google.com/presentation/d/19Ptx7wfajie3Bin_6Ovp5f2JD2-9qRCeMK6ctcNWlek/edit#slide=id.g179a4ab37e_0_25
 
 ###  Branches ### 
-**Create new branch:**\\
+**Create new branch:**
+
 Run the below 2 commands.
 ```
 git checkout -b new_branch_name
@@ -20,7 +21,7 @@ This adds the branch to the GitHub repository on the internet.
 
 If you intend to eventually merge the branch back into the main set of code, this might be the time to create a pull request.  A pull request is part of the process for getting the code merged into the master branch. See [here](programming:Code Development Process) for details.
 
-*- Getting a local copy of a branch **
+** Getting a local copy of a branch **
 
 If someone else has created a branch and pushed it, you can get a local copy on your machine to work from.
 
@@ -28,7 +29,8 @@ If someone else has created a branch and pushed it, you can get a local copy on 
 
 From this point, you can work in the branch as if you created it yourself.
 
-**Deleting a Branch**\\
+**Deleting a Branch**
+
 Run the below 2 commands.
 ```
 git push --delete origin branch_name
@@ -133,7 +135,7 @@ A -- B -- C -- D   <-- master
               
 you'd use `git rebase -i D`, where D is the commit ID of D.  That tells git you want to combine every commit starting at X up to the current member of the branch ZZ into one final commit.
 
-git will open up an editor with a list of commits along the path from X to ZZ.  Before each of them is `pick`.  For every commit **except the first*- change `pick` to `squash`.  Save and exit the editor.
+git will open up an editor with a list of commits along the path from X to ZZ.  Before each of them is `pick`.  For every commit **except the first** change `pick` to `squash`.  Save and exit the editor.
 
 You will then get another editor window. This one lets you decide which commit messages to use for the new squashed commit. By default, it will be all of the commit messages each commit being squashed.  You can use that as is, but sometimes it makes sense to clean up ones which don't matter (e.g. fixing bugs in code which doesn't exist anymore).  Anything in comments (starting with the `#` character) is left out of the message.
 

@@ -1,33 +1,33 @@
 #  Our Sponsors # 
-  - **North Carolina School of Science and Math*- *Institutional Sponsor* 
-  - **Northgate Mall*- *Institutional Sponsor*
-  - **ABCO Automation*- *Gold Sponsor*
-  - **Analog Devices*- *Gold Sponsor*
-  - **Anchor Labs*- *Gold Sponsor*
-  - **AndyMark*- *Gold Sponsor*
-  - **CTR Electronics*- *Gold Sponsor*
-  - **Google*- *Gold Sponsor*
-  - **John Deere*- *Gold Sponsor*
-  - **Kauai Labs*- *Gold Sponsor*
-  - **NVIDIA*- *Gold Sponsor*
-  - **Qualcomm*- *Gold Sponsor*
-  - **US Case*- *Gold Sponsor*
-  - **Overleaf*- *Gold Sponsor* 
-  - **SMT*- *Gold Sponsor*
-  - **YDLIDAR*- *Gold Sponsor*
-  - **Blue Lizard Screen Printing*- *Silver*
-  - **Cisco*- *Silver*
-  - **Github*- *Silver*
-  - **IBM*- *Silver*
-  - **MakeShaper*- *Silver*
-  - **Pixelmator*- *Silver*
-  - **Scalys Grapeboard*- *Silver*
-  - **Slack*- *Silver*
-  - **SolidWorks*- *Silver*
-  - **Toner Plastics*- *Silver*
-  - **VMware*- *Silver*
-  - **ZenHub*- *Silver*
-  - **Zubaz*- *Silver*
+  - **North Carolina School of Science and Math** *Institutional Sponsor* 
+  - **Northgate Mall** *Institutional Sponsor*
+  - **ABCO Automation** *Gold Sponsor*
+  - **Analog Devices** *Gold Sponsor*
+  - **Anchor Labs** *Gold Sponsor*
+  - **AndyMark** *Gold Sponsor*
+  - **CTR Electronics** *Gold Sponsor*
+  - **Google** *Gold Sponsor*
+  - **John Deere** *Gold Sponsor*
+  - **Kauai Labs** *Gold Sponsor*
+  - **NVIDIA** *Gold Sponsor*
+  - **Qualcomm** *Gold Sponsor*
+  - **US Case** *Gold Sponsor*
+  - **Overleaf** *Gold Sponsor* 
+  - **SMT** *Gold Sponsor*
+  - **YDLIDAR** *Gold Sponsor*
+  - **Blue Lizard Screen Printing** *Silver*
+  - **Cisco** *Silver*
+  - **Github** *Silver*
+  - **IBM** *Silver*
+  - **MakeShaper** *Silver*
+  - **Pixelmator** *Silver*
+  - **Scalys Grapeboard** *Silver*
+  - **Slack** *Silver*
+  - **SolidWorks** *Silver*
+  - **Toner Plastics** *Silver*
+  - **VMware** *Silver*
+  - **ZenHub** *Silver*
+  - **Zubaz** *Silver*
 
 #  Sponsor Stuff # 
 ##  Sponsor Order of Operations ## 
@@ -51,7 +51,7 @@ Below is an example of how to begin a phone call to a potential sponsor.
 ##  Grant Searching Info ## 
 Grants, specifically STEM related grants, are a relatively easy way for our team to get money. Grants are obtained usually obtained with submission of an application. The easiest way to find grants are through Google!
   - Google "STEM grants" or "STEM high school grants" anything along these lines and find grants that a high school robotics team would be eligible to apply for.
-  - If you find a grant that looks applicable to our team, note the **due date*- as well as **the criteria for applying*- such as an application or essays.
+  - If you find a grant that looks applicable to our team, note the **due date** as well as **the criteria for applying** such as an application or essays.
   - Send any information to leadership@team900.org and the leadership team and mentors will determine whether the application is feasible.
 
 ##  Drafting Thank You Notes to Sponsors ## 

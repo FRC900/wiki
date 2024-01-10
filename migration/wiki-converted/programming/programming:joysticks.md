@@ -72,7 +72,7 @@ Additionally, there's the option to use the keyboard input described in the `tel
 
 The "Release Buttons" function in the table sets the boolean value of all buttons to false. Normally, releasing a button would do this automatically. However, since `teleop_joints_keyboatd` is reading from characters typed into the command line, there is no way to detect when a button has been released. Therefore, the r key is used to release all buttons that had been previously pressed.
 
-| **Axes:*-           | **Corresponding Keys:*-  |   | **Buttons:*-     | **Corresponding Keys:*-  |
+| **Axes:**           | **Corresponding Keys:**  |   | **Buttons:**     | **Corresponding Keys:**  |
 | Left Stick Y +0.5   | w                        |   | Button A         | 1                        |
 | Left Stick Y -0.5   | s                        |   | Button B         | 2                        |
 | Left Stick X +0.5   | d                        |   | Button X         | 3                        |
@@ -187,7 +187,7 @@ There are various ways joystick data can be processed, depending on what argumen
 
 The "Release Buttons" function in the table sets the boolean value of all buttons to false. Normally, releasing a button would do this automatically. However, since the `frcrobot_sim_interface` is reading from characters typed into the command line, there is no way to detect when a button has been released. Therefore, the r key is used to release all buttons that had been previously pressed.
 
-| **Axes:*-           | **Corresponding Keys:*-  |   | **Buttons:*-     | **Corresponding Keys:*-  |
+| **Axes:**           | **Corresponding Keys:**  |   | **Buttons:**     | **Corresponding Keys:**  |
 | Left Stick Y +0.5   | w                        |   | Button A         | 1                        |
 | Left Stick Y -0.5   | s                        |   | Button B         | 2                        |
 | Left Stick X +0.5   | d                        |   | Button X         | 3                        |

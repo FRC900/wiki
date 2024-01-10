@@ -53,10 +53,12 @@ To train a model:
   - Select New Model -> Images -> Classification
   - Select the correct dataset in the upper left window
   - On the left, select “none” for “Subtract Mean”. This is already done by the image preprocessing, so no need to do it again.
-  - Training epochs is the number of times the complete data set is looped through to train the model.\\
+  - Training epochs is the number of times the complete data set is looped through to train the model.
 
 
-  - For d12, 50 is probably good. For d/c24 125 or so should be enough.\\
+
+  - For d12, 50 is probably good. For d/c24 125 or so should be enough.
+
 
   - Note that using too many epochs isn’t a huge problem. We can grab intermediate epochs and use them if the models, e.g. starts to overfit. The only downside is more epochs = more training time
 
@@ -64,7 +66,8 @@ To train a model:
   - Select custom network
   - Grab original.prototxt from zebravision/d12, zebravision/d24, zebravision/c12 or zebravision/c24
   - Paste that into the text window - See the notes on visualizing a net below
-  - Select a Base Learning Rate\\
+  - Select a Base Learning Rate
+
 
 
   - This influences how quickly the net adapts to errors. Higher means the net will make bigger jumps to correct errors. This could be good for quickly converging on a solution but it might also completely jump over promising sets of weights.
@@ -85,7 +88,8 @@ To train a model:
   - Then the date (20161118)
   - Then some ideas about number of conv and fc layers (6c12c24c_16fc)
   - Then the learning rate (_00025LR)
-  - This gives a quick hint of what the model is simply by browsing in DIGITS.\\
+  - This gives a quick hint of what the model is simply by browsing in DIGITS.
+
 
 
   - Click create
@@ -127,7 +131,8 @@ To use this at startup, do
 ```
 There are corresponding –d24Dir=, –c12Dir= and –c24Dir= command line options. There are also commands to switch between models in real time: < > for d12, N M for d24, : " for c12 and K L for c24. The choice seems arbitrary but note the keys are all near each other, d12/24 on the bottom row and c12/c24 on the top
 
-There are 4 files needed in a given model subdir for zv to use a trained model : - The preprocessing weights (zcaWeights.zca). These don’t change, so just reuse the correct-sized one from a previous run. - A labels.txt file. This maps the classes of images to a human-readable name. This file will be found in the dataset directory used for a given training run. 1. There’s a link to the dataset info top center on the model status page. Click on it. 1. The status box at the top left will show a dataset directory. This will be the directory holding the file labels.txt. Copy that into the zv subdir. - A file called deploy.prototxt. This is a text file defining the net architecture. It will look very similar to the net entered into the custom net window while training. DIGITS does a bit of postprocessing to remove layers only used during training, though, so it isn’t an exact match. - This is in the “Job Directory” listed at the top left of the model status window.\\
+There are 4 files needed in a given model subdir for zv to use a trained model : - The preprocessing weights (zcaWeights.zca). These don’t change, so just reuse the correct-sized one from a previous run. - A labels.txt file. This maps the classes of images to a human-readable name. This file will be found in the dataset directory used for a given training run. 1. There’s a link to the dataset info top center on the model status page. Click on it. 1. The status box at the top left will show a dataset directory. This will be the directory holding the file labels.txt. Copy that into the zv subdir. - A file called deploy.prototxt. This is a text file defining the net architecture. It will look very similar to the net entered into the custom net window while training. DIGITS does a bit of postprocessing to remove layers only used during training, though, so it isn’t an exact match. - This is in the “Job Directory” listed at the top left of the model status window.
+
 - A file called snapshot_iter_<html><some numbers></html>.caffemodel. This holds the trained weights for every trainable element in the network. The numbers increase the longer training goes on. Typically you’ll want the highest numbered one. - This is in the same “Job Directory” as above. - If you look at the zv d12 directory as an example, there are some other files which are good to keep around for informational purposes. These are all from the “Job Directory” :
 
   - original.prototxt : this is an exact copy of what was entered into the custom net definition. This is useful to have to recreate a run if neccssary

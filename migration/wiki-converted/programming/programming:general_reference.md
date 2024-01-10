@@ -24,7 +24,7 @@ This is a page of general information and links for all programmers.
   - [Random Jetson Notes](Random Jetson Notes)
   - [Everything you need to know about reading config values](reading_config_values)
 
-*- To add to this page: code structure information, git commands to know and troubleshooting, links to wpilib documentation and ROS tutorials, whitepapers from previous years, collecting/analyzing data page, previous years' code and preseason code, basic ros commands you need to know, how to deploy code to roborio and jetson or one or the other, how code starts up (and which filest, rospub etc), how to deploy code to roborio and jetson or one or the other, how code starts up (and which files to edit to fix things), how to reflash the roborio, how to program a radio, how to use controllers (maybe just a link), how to set up a new computer for ROS/FRC900/doom, and docker info **
+** To add to this page: code structure information, git commands to know and troubleshooting, links to wpilib documentation and ROS tutorials, whitepapers from previous years, collecting/analyzing data page, previous years' code and preseason code, basic ros commands you need to know, how to deploy code to roborio and jetson or one or the other, how code starts up (and which filest, rospub etc), how to deploy code to roborio and jetson or one or the other, how code starts up (and which files to edit to fix things), how to reflash the roborio, how to program a radio, how to use controllers (maybe just a link), how to set up a new computer for ROS/FRC900/doom, and docker info **
 
 ###  Configuration Settings for Devices and Common IPs### 
 

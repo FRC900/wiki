@@ -36,7 +36,8 @@ FIRST reserves ports 5800-5810 for "Team Use". Current port assignments for our 
 
 ###  How to Connect roboRIO to Internet ### 
 
-Plug in laptop with USB connection to the roboRIO, change the network settings to DHCP in webdash. Reboot the robot. Plug in Ethernet cord from roboRIO to network switch, with another laptop, plug in with ethernet to network switch. Using the laptop still connected of USB, find IP address of RIO, and ssh into RIO from the laptop connected to the switch. You should now have internet on the RIO.\\
+Plug in laptop with USB connection to the roboRIO, change the network settings to DHCP in webdash. Reboot the robot. Plug in Ethernet cord from roboRIO to network switch, with another laptop, plug in with ethernet to network switch. Using the laptop still connected of USB, find IP address of RIO, and ssh into RIO from the laptop connected to the switch. You should now have internet on the RIO.
+
 
 Note: not sure if that works? ssh onto the RIO failed in the lab when attempted 1/4/2020, though ping to the RIO worked
   

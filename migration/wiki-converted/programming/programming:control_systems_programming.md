@@ -2,7 +2,7 @@
 
 Here you will find information about our Control Systems programming projects, resources that we've found helpful in learning and teaching, and general tips and tricks for how to make an effective robot.
 
-*- TODO: port some of this over to general programming **
+** TODO: port some of this over to general programming **
 
 -------------------
 

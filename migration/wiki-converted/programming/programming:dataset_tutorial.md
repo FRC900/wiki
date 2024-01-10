@@ -81,13 +81,15 @@ Two numbers are displayed at the end of the run. These are the multipler and add
 
 ###  Preprocessing negative images ### 
 
-Now generate some negative images. You’ll need to grab some directories with a bunch of random images. Luckily we did this in the first step above. The GenInitNegFromFile tool will grab random subimages from those to use as negatives.\\
+Now generate some negative images. You’ll need to grab some directories with a bunch of random images. Luckily we did this in the first step above. The GenInitNegFromFile tool will grab random subimages from those to use as negatives.
+
 Alternatively, the framegrabber tool can be used to grab a number of frames from any video input.
 
 ```bash
 cd /home/ubuntu/2016VisionCode/framegrabber
 ```
-  - edit GenerateInitNegFromFile.cpp. Look at the calls to GetFilePaths and set them to the path(s) containing negative images you wish to sample from. These should be the various subdirectories of ~/negative_full_images.\\
+  - edit GenerateInitNegFromFile.cpp. Look at the calls to GetFilePaths and set them to the path(s) containing negative images you wish to sample from. These should be the various subdirectories of ~/negative_full_images.
+
 
   - Set oFolder = “~/CNN_DEMO/negative/generic”
   - Make sure nNegs is a reasonable number to generate. A count 5-10x larger than the positive image count is a good place to start

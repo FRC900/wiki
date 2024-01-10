@@ -2,9 +2,12 @@
 ## Storing Config Values## 
 Make a .yaml file in a package's config directory
 
-Write stuff in it. Syntax guides://\
-https://gettaurus.org/docs/YAMLTutorial/#YAML-Syntax (good one)\\
-http://wiki.ros.org/YAML%20Overview (the less detailed one that ROS wiki provides)\\
+Write stuff in it. Syntax guides:
+
+https://gettaurus.org/docs/YAMLTutorial/#YAML-Syntax (good one)
+
+http://wiki.ros.org/YAML%20Overview (the less detailed one that ROS wiki provides)
+
 
 Add it to your launch file with this line:
 ```
@@ -61,9 +64,12 @@ ROS wiki's page on this: http://wiki.ros.org/roscpp/Overview/Parameter%20Server
 ### A Note on Namespacing (IMPORTANT)### 
 Every config value has a namespace it lives in. If you want to get the proper config value, you have to specify its namespace correctly. Example: `/intake/intake_actionlib_params/server_timeout`. The namespace is `/intake/intake_actionlib_params`, the config value is `server_timeout`
 
-The namespace can come from two places://\
-a) the group the <rosparam> tag is in\\
-b) namespacing in the yaml file\\
+The namespace can come from two places:
+
+a) the group the <rosparam> tag is in
+
+b) namespacing in the yaml file
+
 
 The above example has both of these. The <rosparam> was put in the launch file like this:
 ```

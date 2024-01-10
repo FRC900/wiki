@@ -2,7 +2,8 @@
 
 Congratulations, your wiki is now up and running. Here are a few more tips to get you started.
 
-Enjoy your work with DokuWiki,\\
+Enjoy your work with DokuWiki,
+
 -- the developers
 
 ##  Create your first pages ## 

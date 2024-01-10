@@ -216,7 +216,9 @@ Note that the end time is left at the end of the spline.  This means that the de
 
 ###  Spline Evaluation ## 
 
-The optimization algorithm operates by trying to reduce the \\cost\\ of the overall spline path.  In this case, the cost is basically a measure of how good it is at matching our requirements. The two requirements described above are time to drive and deviation from a straight line path. The evaluateSpline() function is used to calculate the cost given those requirements.
+The optimization algorithm operates by trying to reduce the 
+cost
+ of the overall spline path.  In this case, the cost is basically a measure of how good it is at matching our requirements. The two requirements described above are time to drive and deviation from a straight line path. The evaluateSpline() function is used to calculate the cost given those requirements.
 
 Both are evaluated on a point by point basis. The points in this context are the equally-spaced arclength points described above.  Sampling at equal arclengths gives a bit more weight to the curved parts of the path, which (handwaving!) is where more interesting things happen. 
 

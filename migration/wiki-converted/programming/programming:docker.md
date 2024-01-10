@@ -9,12 +9,16 @@ To get an idea of what Docker is and what it does, reading the [Docker Overview]
 
 ##  Installing Docker ## 
 
-**NOTE: THIS INSTALLATION INFORMATION IS OUTDATED. FOR UPDATED INFORMATION, SEE EITHER __[THIS PAGE](programming:curriculum:ubuntu)__ OR GO DIRECTLY TO THIS GUIDE:**\\
-https://docs.google.com/document/d/1Tatn_AO20QY5a7Z8FREisJILmsiPbGAA3VSFKOOGNMU/edit
-\\
+**NOTE: THIS INSTALLATION INFORMATION IS OUTDATED. FOR UPDATED INFORMATION, SEE EITHER __[THIS PAGE](programming:curriculum:ubuntu)__ OR GO DIRECTLY TO THIS GUIDE:**
 
-*Frankly, most of this page is either outdated or documented elsewhere. See the curriculum for better information.*\\
-\\
+https://docs.google.com/document/d/1Tatn_AO20QY5a7Z8FREisJILmsiPbGAA3VSFKOOGNMU/edit
+
+
+
+*Frankly, most of this page is either outdated or documented elsewhere. See the curriculum for better information.*
+
+
+
 
 Docker containers run directly on any Docker host and do not have to run inside a VM. Sometimes VMs are used to easily bring up a Docker host but Docker container can run directly on any Linux system with Docker installed. For running Docker containers on Windows or Mac, virtualization is used under the covers to start a Linux VM as a Docker host.
 
