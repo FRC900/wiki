@@ -1,0 +1,47 @@
+#= Mechanical #=
+
+Where all the mistakes get both created and fixed
+
+Just a friendly reminder that you should never feel intimidated by this Wiki, if you know something to add, add it, it only helps. This Wiki is by no means complete and while there is an edit list at the bottom of this page there are many things that have been overlooked or could be added to so feel free to add whatever you would feel is necessary.
+
+[[mechanical:Machining|Machining]]\\
+This section lists our machining capabilities and resources. This must be taken into account during design; if we can't machine it, the design is no good. 
+
+[[Mechanical:Systems:Electrical|Electronics]]\\
+This section lists the electronics required on an FRC robot, the layout in which they should be wired, and installation techniques. 
+
+[[mechanical:systems:pneumatic|Pneumatics]]\\
+This section contains reference information about pneumatics: what they are, when to use them, how to use them, and circuit symbols. 
+
+[[mechanical:Fasteners|Fasteners]]\\
+This section lists many of the common fasteners we use as well as installation/removal techniques/tools.
+
+[[mechanical:CAD:OnShape|OnShape]]\\
+This section contains reference information for OnShape, as well as how to do certain tasks like making a sketch, mating, making drawings, exporting for 3D printing, etc.
+
+[[mechanical:CAD:SolidWorks|SolidWorks]]\\
+This section contains information on exporting parts from Solidworks
+
+[[mechanical:Part Numbering|Part Numbering]]\\
+This section contains information on our Part Numbering system for the robot, such as where to find it and how to use it. 
+
+[[mechanical:Useful Links|Useful Links]]\\
+This section contains links useful as a reference for our mechanical students.
+
+[[mechanical:Design Reviews|Design Reviews]]\\
+This section contains some general rules/guidelines for design reviews.
+
+[[mechanical:Drivetrains|Drivetrains]]\\
+This section contains information on different types of drivetrains and how to choose one.
+
+[[mechanical:Packing List|Packing List]]\\
+This section contains a competition packing list to reference when packing and before leaving. 
+
+
+
+
+
+
+
+
+

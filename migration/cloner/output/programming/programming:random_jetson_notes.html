@@ -1,0 +1,1 @@
+To get the fan to spin when running on the J120, pull PWM pin (blue wire)

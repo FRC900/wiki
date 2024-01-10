@@ -1,0 +1,1 @@
+This document theoretically explains the major concepts and code components of the goal detection package.

@@ -1,0 +1,41 @@
+#= Introduction #=
+
+This page contains information on how to customize a stock roboRIO for use by Team 900.
+
+# Flashing the roboRIO #
+
+The tool used to flash a roboRIO is part of the FRC GameTools package. This entire package should be installed on driver station laptops.
+
+See https:*docs.wpilib.org/en/latest/docs/getting-started/getting-started-frc-control-system/frc-game-tools.html for the details of installing.
+
+Once the Game Tools are installed, flash the Rio with the latest image using the docs from here : https:*docs.wpilib.org/en/latest/docs/getting-started/getting-started-frc-control-system/imaging-your-roborio.html
+# Run the CTRE Lifeboat setup #
+
+Install the latest CTRE Phoenix software on the driver station. 
+
+
+
+# Change Network Config #
+
+After the Rio has been updated, the Rio imaging tool will display its IP address.  Open this address in a web browser to bring up the Rio web dashboard.
+
+On the Networking tab of the web dashboard (look for the network cable icon), change the IP to be static and assign it to be 10.9.0.2. Subnet mask should be set to 255.255.255.0. Make the gateway 10.9.0.1.  Set the DNS nameserver to 8.8.8.8.
+
+
+# Install ROS packages and WPILIB #
+
+The RIO needs to be hooked up to the internet for this to work. There are two options here.
+
+=== Rio directly connected to the internet ===
+
+First is to use the Webdash to change the network configuration to dynamic.  Hook the Rio up to a network cable connected to the internet.  Connect a linux laptop to the internet using a cable connected to the same switch the Rio is.  Use the webdash to identify the IP address of the Rio, use that as the command-line argument to the `%%roborio_install_ros.sh%%` script below.
+
+=== Linux laptop as a bridge ===
+
+The other option is to setup the Rio for the robot network. Then use a linux laptop to bridge between the robot network and the internet. 
+
+Details are here : https:*wiki.team900.org/doku.php?id=programming:all_things_networking#how_to_use_a_laptop_to_get_the_robot_on_the_internet
+
+=== Rio ROS install script ===
+
+The script `%%roborio_install_ros.sh%%` will guide through the process. The script takes one command-line argument 1. the IP address of the RIO.  It should be totally hands-off, but double check that no errors are reported during the process.
