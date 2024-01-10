@@ -16,7 +16,7 @@ your_mechanism_controller:
 
 E.g.
 
-{{:programming:panel_intake_controller.png?nolink&600}}
+![](../../wiki-resources/programming/panel_intake_controller.png)
 
 If you're controlling a motor, you need to add additional information for each motor:
 
@@ -35,11 +35,11 @@ Here, `mechanism_joint` is the thing your cpp file references, which points to t
 
 E.g.
 
-{{:programming:cargo_intake_params.png?nolink&1000|}}
+![](../../wiki-resources/programming/cargo_intake_params.png)
 
 Second, we need to tell the computer to launch your controller. Enter the file `zebROS_ws/controller_node/launch/2019_compbot_jetson.launch`. Find the controller manager node, and add your controller to the list of controllers to "spawn." Example:
 
-{{:programming:panel_controller_launch.png?nolink&1000}}
+![](../../wiki-resources/programming/panel_controller_launch.png)
 
 You do not need to recompile code after making these two changes (yaml files and launch files don't need to be compiled, only cpp files)
 

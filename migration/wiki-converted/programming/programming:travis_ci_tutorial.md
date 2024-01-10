@@ -10,7 +10,7 @@ The environment variables `%%GITHUB_USER%%` and `%%GITHUB_PASS%%` are set by Tra
 
 Anyone with access to a private repo can see its Travis status.
 
-  - [2018RobotCode](https://travis-ci.com/FRC900/2018RobotCode) - {{https://travis-ci.com/FRC900/2018RobotCode.png?token=T6hJWxFcNyyzxifXQqW5&branch=master&.png?&nocache}}
+  - [2018RobotCode](https://travis-ci.com/FRC900/2018RobotCode) - ![](../../wiki-resourceshttps///travis-ci.com/FRC900/2018RobotCode.png)
 
 ###  2018RobotCode YAML ### 
 

@@ -1,6 +1,6 @@
 #  DokuWiki # 
 
-[{{wiki:dokuwiki-128.png }}](doku>wiki:dokuwiki) DokuWiki is a simple to use and highly versatile Open Source [wp>wiki](wp>wiki) software that doesn't require a database. It is loved by users for its clean and readable [wiki:syntax](wiki:syntax). The ease of maintenance, backup and integration makes it an administrator's favorite. Built in [access controls](doku>acl) and [authentication connectors](doku>auth) make DokuWiki especially useful in the enterprise context and the large number of [doku>plugins](doku>plugins) contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.
+[![](../../wiki-resourceswiki/dokuwiki-128.png)](doku>wiki:dokuwiki) DokuWiki is a simple to use and highly versatile Open Source [wp>wiki](wp>wiki) software that doesn't require a database. It is loved by users for its clean and readable [wiki:syntax](wiki:syntax). The ease of maintenance, backup and integration makes it an administrator's favorite. Built in [access controls](doku>acl) and [authentication connectors](doku>auth) make DokuWiki especially useful in the enterprise context and the large number of [doku>plugins](doku>plugins) contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.
 
 Read the [DokuWiki Manual](doku>manual) to unleash the full power of DokuWiki.
 

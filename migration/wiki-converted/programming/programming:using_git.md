@@ -168,10 +168,10 @@ Git LFS works by replacing the file tracked with LFS in the git repository with 
 
 A standard git repository:
 
-[{{https://www.git-tower.com/learn/content/01-git/01-ebook/en/01-command-line/05-advanced-topics/07-git-lfs/02-setup-git-standard.png?650}}](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-lfs)
+[![](../../wiki-resourceshttps///www.git-tower.com/learn/content/01-git/01-ebook/en/01-command-line/05-advanced-topics/07-git-lfs/02-setup-git-standard.png)](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-lfs)
 
 A git LFS repository:
 
-[{{https://www.git-tower.com/learn/content/01-git/01-ebook/en/01-command-line/05-advanced-topics/07-git-lfs/03-setup-git-lfs.png?650}}](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-lfs)
+[![](../../wiki-resourceshttps///www.git-tower.com/learn/content/01-git/01-ebook/en/01-command-line/05-advanced-topics/07-git-lfs/03-setup-git-lfs.png)](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-lfs)
 
  

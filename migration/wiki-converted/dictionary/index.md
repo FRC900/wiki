@@ -5,20 +5,20 @@
 **Parts**
   - **AM9015**- A DC motor. We don't use these very much.
   - **Anderson Powerpole**-electrical connectors for wires     
- {{::powerpole_cutaway.jpg?200|}}
+ ![](../../wiki-resources/powerpole_cutaway.jpg)
   - **Bearing**-part which allows motion by minimizing the friction, often by encasing small metal balls which roll to allow motion
-{{::ball_bearing2.jpg?200|}}
+![](../../wiki-resources/ball_bearing2.jpg)
   - **Belt**-a flexible loop of material often used to link rotating mechanisms
-{{::154px-keilriemen-v-belt.png?200|}}
+![](../../wiki-resources/154px-keilriemen-v-belt.png)
   - **CAN Bus** - **C**ontrol **A**rea **N**etwork bus is a vehicle bus (a communication network that connects different components of the robot) which allows devices like microcontrollers to communicate without a host computer through message-based protocols
-{{::capture.png?400|}}
+![](../../wiki-resources/capture.png)
   - **Chain**
   - **CIM** - A 12v DC motor for powering drivetrain or other large mechanisms. Pronounced "SIM". Depending on whom you ask this stands for **CCL** **I**ndustrial **M**otors or **C**ontrolled **I**nduction **M**otor. For FIRST, manufactured by Vex Robotics.
   - **Compliant wheel** 
   - **Colson wheel** - Caster wheels with rubber tires. Available in many different sizes and traction levels.
   - **Encoder**-a device which senses motion and converts that information (position, speed, direction) into electrical signal to be read by somme motion control system
   - **Gusset plate**-plates which allow beams or pieces to be held together at an angle using bolts, rivets, or welding
-{{:gusset.jpg?200|}}
+![](../../wiki-resources/gusset.jpg)
   - **Jetson**-low power processing board made by NVIDIA for accelerated machine learning applications
   - **miniCIM** - A 12v DC motor for powering drivetrain or other large mechanisms. Pronounced "SIM". Depending on whom you ask this stands for **CCL** **I**ndustrial **M**otors or **C**ontrolled **I**nduction **M**otor. For FIRST purposes, manufactured by Vex Robotics. The miniCIM has a similar size but approximately 2/3 the power and 2/3 the length.
   - **Pressure Regulator**-valve which reduces the pressure of fluid or gas in a system to the desired output used in pneumatics or hydraulics
@@ -37,7 +37,7 @@
   - **775pro**
 **Tools**
   - **Allen key** - The L-shaped tool with a hexagonal shape used for tightening (and loosening!) bolts with hex heads
-  - **Band saw** - a power tool that uses a ribbon-like saw that has been welded into a loop. {{ :bandsaw-main-parts.jpg?200|}}
+  - **Band saw** - a power tool that uses a ribbon-like saw that has been welded into a loop. ![](../../wiki-resources/bandsaw-main-parts.jpg)
   - **CNC** - **C**omputer **N**umerical **C**ontrol - a catch-all term for machines that use instructions (G-Code) providing the coordinates for movement of cutting or deposition tool heads.
   - **CNC mill** - A programmable mill for cutting metal with high precision
   - **Drill** - A typically handheld power tool that uses spiral cutters (drill bits) to make holes of various sizes.

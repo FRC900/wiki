@@ -106,9 +106,9 @@ $lang['js']['nosmblinks'] = `;
 
 You can also use an image to link to another internal or external page by combining the syntax for links and [images](#images_and_other_files) (see below) like this:
 
-  [{{wiki:dokuwiki-128.png}}](http://php.net)
+  [![](../../wiki-resourceswiki/dokuwiki-128.png)](http://php.net)
 
-[{{wiki:dokuwiki-128.png}}](http://php.net)
+[![](../../wiki-resourceswiki/dokuwiki-128.png)](http://php.net)
 
 Please note: The image formatting is the only formatting syntax accepted in link names.
 
@@ -140,37 +140,37 @@ By using four or more dashes, you can make a horizontal line:
 
 You can include external and internal [images, videos and audio files](doku>images) with curly brackets. Optionally you can specify the size of them.
 
-Real size:                        {{wiki:dokuwiki-128.png}}
+Real size:                        ![](../../wiki-resourceswiki/dokuwiki-128.png)
 
-Resize to given width:            {{wiki:dokuwiki-128.png?50}}
+Resize to given width:            ![](../../wiki-resourceswiki/dokuwiki-128.png)
 
-Resize to given width and height((when the aspect ratio of the given width and height doesn't match that of the image, it will be cropped to the new ratio before resizing)): {{wiki:dokuwiki-128.png?200x50}}
+Resize to given width and height((when the aspect ratio of the given width and height doesn't match that of the image, it will be cropped to the new ratio before resizing)): ![](../../wiki-resourceswiki/dokuwiki-128.png)
 
-Resized external image:           {{https://secure.php.net/images/php.gif?200x50}}
+Resized external image:           ![](../../wiki-resourceshttps///secure.php.net/images/php.gif)
 
-  Real size:                        {{wiki:dokuwiki-128.png}}
-  Resize to given width:            {{wiki:dokuwiki-128.png?50}}
-  Resize to given width and height: {{wiki:dokuwiki-128.png?200x50}}
-  Resized external image:           {{https://secure.php.net/images/php.gif?200x50}}
+  Real size:                        ![](../../wiki-resourceswiki/dokuwiki-128.png)
+  Resize to given width:            ![](../../wiki-resourceswiki/dokuwiki-128.png)
+  Resize to given width and height: ![](../../wiki-resourceswiki/dokuwiki-128.png)
+  Resized external image:           ![](../../wiki-resourceshttps///secure.php.net/images/php.gif)
 
 
 By using left or right whitespaces you can choose the alignment.
 
-{{ wiki:dokuwiki-128.png}}
+![](../../wiki-resourceswiki/dokuwiki-128.png)
 
-{{wiki:dokuwiki-128.png }}
+![](../../wiki-resourceswiki/dokuwiki-128.png)
 
-{{ wiki:dokuwiki-128.png }}
+![](../../wiki-resourceswiki/dokuwiki-128.png)
 
-  {{ wiki:dokuwiki-128.png}}
-  {{wiki:dokuwiki-128.png }}
-  {{ wiki:dokuwiki-128.png }}
+  ![](../../wiki-resourceswiki/dokuwiki-128.png)
+  ![](../../wiki-resourceswiki/dokuwiki-128.png)
+  ![](../../wiki-resourceswiki/dokuwiki-128.png)
 
 Of course, you can add a title (displayed as a tooltip by most browsers), too.
 
-{{ wiki:dokuwiki-128.png |This is the caption}}
+![This is the caption](../../wiki-resourceswiki/dokuwiki-128.png)
 
-  {{ wiki:dokuwiki-128.png |This is the caption}}
+  ![This is the caption](../../wiki-resourceswiki/dokuwiki-128.png)
 
 For linking an image to another page see [#Image Links](#Image Links) above.
 
@@ -187,9 +187,9 @@ If you specify a filename that is not a supported media format, then it will be 
 
 By adding `?linkonly` you provide a link to the media without displaying it inline
 
-  {{wiki:dokuwiki-128.png?linkonly}}
+  ![](../../wiki-resourceswiki/dokuwiki-128.png)
 
-{{wiki:dokuwiki-128.png?linkonly}} This is just a link to the image.
+![](../../wiki-resourceswiki/dokuwiki-128.png) This is just a link to the image.
 
 ###  Fallback Formats ### 
 
@@ -197,7 +197,7 @@ Unfortunately not all browsers understand all video and audio formats. To mitiga
 
 For example consider this embedded mp4 video:
 
-  {{video.mp4|A funny video}}
+  ![A funny video](../../wiki-resourcesvideo.mp4)
 
 When you upload a `video.webm` and `video.ogv` next to the referenced `video.mp4`, DokuWiki will automatically add them as alternatives so that one of the three files is understood by your browser.
 
@@ -516,9 +516,9 @@ By default the feed will be sorted by date, newest items first. You can sort it 
 
 **Example:**
 
-  {{rss>http://slashdot.org/index.rss 5 author date 1h }}
+  ![](../../wiki-resourcesrss>http///slashdot.org/index.rss 5 author date 1h)
 
-{{rss>http://slashdot.org/index.rss 5 author date 1h }}
+![](../../wiki-resourcesrss>http///slashdot.org/index.rss 5 author date 1h)
 
 
 ##  Control Macros ## 

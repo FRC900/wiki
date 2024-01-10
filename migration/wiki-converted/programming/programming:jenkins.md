@@ -35,4 +35,4 @@
   - Copy secret info from GitHub OAuth page in GitHub here
   - Minimum OAuth scopes acceptable
   - Authorization strategy follows:
-  - {{:programming:jenkins_auth_strategy.png?400|}}
+  - ![](../../wiki-resources/programming/jenkins_auth_strategy.png)

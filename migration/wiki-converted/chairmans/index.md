@@ -1,6 +1,6 @@
 #  Chairman's # 
 
-Advice for completing Chairman's: {{ ::chairmans_advice_pdf.pdf |}}
+Advice for completing Chairman's: ![](../../wiki-resources/chairmans_advice_pdf.pdf)
 
 Stuff for our Chairman's team.
 

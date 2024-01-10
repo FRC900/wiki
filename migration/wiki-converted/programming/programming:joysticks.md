@@ -165,25 +165,25 @@ There are various ways joystick data can be processed, depending on what argumen
 
 *a. Single Joystick (`hw_or_sim:=hw`, `joy_or_key:=joy`)* — The FRC Driver Station sends joystick data to the `frcrobot_hw_interface`, which publishes the data as a `sensor_msgs::Joy` message. The message is then read, translated, and published as an `frc_msgs::JoystickState` message by the `translate_joystick_data_node`. This message is then read and interpreted by the `teleop_joystick_comp` node, which triggers robot actions. This is the normal way joystick code is run.
 
-{{ :programming:physical_robot_single_joystick_horizontal_version.png?nolink&600 |}}
+![](../../wiki-resources/programming/physical_robot_single_joystick_horizontal_version.png)
 
 *b. Two Joysticks (`hw_or_sim:=hw`, `joy_or_key:=two_joy`)* — The FRC Driver Station sends data from two joysticks to the `frcrobot_hw_interface`, which publishes the data as `sensor_msgs::Joy` messages on two separate `rostopics`. The messages are then read, translated, and published as `frc_msgs::JoystickState` messages by two instances of the `translate_joystick_data_node`. These messages are then both read and interpreted by the `teleop_joystick_comp` node, which triggers robot actions. This has never been used, but it is good to have the option of using multiple joysticks, especially if controlling the robot gets too complicated for a single driver.
 
-{{ :programming:physical_robot_two_joysticks_horizontal_version.png?nolink&600 |}}
+![](../../wiki-resources/programming/physical_robot_two_joysticks_horizontal_version.png)
 
 ####  2. Joystick code in simulation #### 
 
 *a. Single Joystick (`hw_or_sim:=sim`, `joy_or_key:=joy`)* — The `joy_node` reads data from the connected joystick and publishes a `sensor_msgs::Joy` message to the `joystick_remap` node. After manipulating the message, the `joystick_remap` node publishes to the `translate_joystick_data_node`, which converts the `sensor_msgs::Joy` message into an `frc_msgs::JoystickState` message. The new message is then published to the `teleop_joystick_comp` node, which interprets the message and triggers actions in the simulation. This is the closest simulation gets to the normal configuration on an actual robot.
 
-{{ :programming:simulation_single_joystick.png?nolink&600 |}}
+![](../../wiki-resources/programming/simulation_single_joystick.png)
 
 *b. Two Joysticks (`hw_or_sim:=sim`, `joy_or_key:=two_joy`)* — Two instances of the `joy_node` read data from two connected joysticks and publish `sensor_msgs::Joy` messages to two copies of the `joystick_remap` node. After manipulating the message, the `joystick_remap` nodes publish to two instances of the `translate_joystick_data_node`, which convert the `sensor_msgs::Joy` messages into `frc_msgs::JoystickState` messages. The new messages are then published to the `teleop_joystick_comp` node, which differentiates between the messages, interprets them, and then triggers actions in the simulation. This is the simulation counterpart to using two joystick on a physical robot.
 
-{{ :programming:simulation_two_joysticks.png?nolink&600 |}}
+![](../../wiki-resources/programming/simulation_two_joysticks.png)
 
 *c. Keyboard Inputs (`hw_or_sim:=sim,` `joy_or_key:=key`)* — The `frcrobot_sim_interface` reads keyboard inputs and publishes a `sensor_msgs::Joy` message to the `translate_joystick_data_node`. This node translates the message into an `frc_msgs::JoystickState` message and publishes it to the `teleop_joystick_comp` node, which interprets the data and triggers actions in the simulation. This configuration is only useful if one wants to test the code's response to a button press without actually having a joystick connected and set up. It is too complicated and impractical for any other use, given the sheer number of different keys needed to simulate a joystick.
 
-{{ :programming:simulation_keyboard_inputs.png?nolink&600 |}}
+![](../../wiki-resources/programming/simulation_keyboard_inputs.png)
 
 The "Release Buttons" function in the table sets the boolean value of all buttons to false. Normally, releasing a button would do this automatically. However, since the `frcrobot_sim_interface` is reading from characters typed into the command line, there is no way to detect when a button has been released. Therefore, the r key is used to release all buttons that had been previously pressed.
 

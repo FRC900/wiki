@@ -9,7 +9,7 @@ sudo gparted
 
 4) Change the hard drive you're modifying from /dev/sda to /dev/sdb (or something like that)
 
-{{:programming:formatting1.png?400|}}
+![](../../wiki-resources/programming/formatting1.png)
 
 5) Right-click on the partition name and select "Unmount"
 

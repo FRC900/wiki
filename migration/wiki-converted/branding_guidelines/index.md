@@ -63,33 +63,33 @@ When referring to ourselves, we will use “The Zebracorns” and not “Team 90
 
 Stripe Headers:
 
-  - {{:1.png?400|stripe header}}
+  - ![stripe header](../../wiki-resources/1.png)
 
 Stripe Footer:
 
-  - {{:2.png?400|stripe footner}}
+  - ![stripe footner](../../wiki-resources/2.png)
 
 Corner Header:
 
-  - {{:logo-frcteam900.png?400|corner header}}
+  - ![corner header](../../wiki-resources/logo-frcteam900.png)
 
 Corner Footer:
 
-  - {{:corner_footer.png?400|Corner footer sc}}
+  - ![Corner footer sc](../../wiki-resources/corner_footer.png)
 
 Logos:
 
-  - {{:logos.png?400|Logos sc}}
+  - ![Logos sc](../../wiki-resources/logos.png)
 
 Corner Watermark:
 
-  - {{:corner_watermark.png?400|Corner wm sc}
+  - ![Corner wm sc](../../wiki-resources/corner_watermark.png)
 
 Transparent White:
 
-  - {{:transparent_white_pt1.png?400|Transparent White 1sc}}
+  - ![Transparent White 1sc](../../wiki-resources/transparent_white_pt1.png)
 
-  - {{:transparent_white_pt2.png?400|Transparent White 2sc}}
+  - ![Transparent White 2sc](../../wiki-resources/transparent_white_pt2.png)
 
 
 
@@ -147,7 +147,7 @@ Note: our team logo is in Avenir typeface.
 
 
 #  Color Palette # 
-{{:color_palette.png?400|}}
+![](../../wiki-resources/color_palette.png)
 
 
 
