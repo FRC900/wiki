@@ -11,7 +11,7 @@ roscd beginner_tutorials
 
 ### The Code
 
-This is the example publisher code we'll be using:
+This is the example publisher code we'll be using: Make sure the ```#!/usr/bin/env python3``` is at the top of the file 
 ```
 #!/usr/bin/env python3
 # license removed for brevity
