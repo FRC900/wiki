@@ -6,7 +6,7 @@ Writing the Publisher Node
 Change directory into the beginner_tutorials package:
 
 ```
-$ roscd beginner_tutorials
+roscd beginner_tutorials
 ```
 
 ### The Code
