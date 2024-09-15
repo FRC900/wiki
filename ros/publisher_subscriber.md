@@ -111,7 +111,7 @@ Writing the Subscriber Node
 ---------------------------
 
 ### The Code
-
+Again make sure the python3 line is at the top. 
 ```
 #!/usr/bin/env python3
 import rospy
