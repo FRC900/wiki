@@ -157,6 +157,5 @@ We also changed up the call to `rospy.init_node()` somewhat. We've added the `an
 
 The final addition, `rospy.spin()`, simply keeps your node from exiting until the node has been shutdown. Unlike roscpp, `rospy.spin()` does not affect the subscriber callback functions, as those have their own threads.
 
-Running The Publisher And Subscriber
+[Running The Publisher And Subscriber](./running_publisher_subscriber.md)
 ---------------------------
-http://wiki.ros.org/ROS/Tutorials/ExaminingPublisherSubscriber
