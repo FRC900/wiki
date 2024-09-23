@@ -9,6 +9,7 @@ Here we'll create the service (`add_two_ints_server`) node which will receive tw
 Change directory into the `beginner_tutorials` package:
 
 ```bash
+rosstd # have to do this once per terminal
 roscd beginner_tutorials
 ```
 
@@ -185,3 +186,5 @@ rosrun beginner_tutorials add_two_ints_client.py 4 5
 
 
 ![ROS Noetic mascot](https://spectrum.ieee.org/media-library/noetic-ninjemys-is-the-last-distribution-release-of-ros-1.jpg?id=25591717)
+
+[Home](/README.md)
