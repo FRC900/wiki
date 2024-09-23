@@ -13,6 +13,11 @@ rosstd # have to do this once per terminal
 roscd beginner_tutorials
 ```
 
+Build the `beginner_tutorials` package (we added the `AddTwoInts` service, which needs to be built in order to be used):
+```bash
+natbuild beginner_tutorials
+```
+
 ### The Code
 
 Create the **src/add\_two\_ints\_server.py** file within the `beginner_tutorials` package (e.g. through `Ctrl-N` in VS Code) and paste the following inside it:
