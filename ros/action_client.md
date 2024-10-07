@@ -1,6 +1,8 @@
 The Code
 --------
 
+Put this code in `beginner_tutorials/src/fibonacci_client.py`:
+
 ```py
 #!/usr/bin/env python3
 import rospy
@@ -34,6 +36,14 @@ if __name__ == '__main__':
         print("Result:", ', '.join([str(n) for n in result.sequence]))
     except rospy.ROSInterruptException:
         print("program interrupted before completion", file=sys.stderr)
+```
+
+**IMPORTANT:** In Linux, files can't be executed/run as code unless they are specifically marked as executable. So, whenever we create a new Python node, we must mark it as executable. We do this by using the `chmod` command with the `+x` flag (`add` e`x`ecutable permissions) and giving it the path to our Python code:
+
+```bash
+rosstd
+roscd beginner_tutorials
+chmod +x src/fibonacci_client.py
 ```
 
 The Code, explained

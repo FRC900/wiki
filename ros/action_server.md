@@ -5,6 +5,8 @@ The code and examples used in this tutorial can be found in the [actionlib_tutor
 
 ### The Code
 
+Put this code in `beginner_tutorials/src/fibonacci_server.py`:
+
 ```py
 #!/usr/bin/env python3
 import rospy
@@ -55,6 +57,14 @@ if __name__ == '__main__':
     rospy.init_node('fibonacci')
     server = FibonacciAction(rospy.get_name())
     rospy.spin()
+```
+
+**IMPORTANT:** In Linux, files can't be executed/run as code unless they are specifically marked as executable. So, whenever we create a new Python node, we must mark it as executable. We do this by using the `chmod` command with the `+x` flag (`add` e`x`ecutable permissions) and giving it the path to our Python code:
+
+```bash
+rosstd
+roscd beginner_tutorials
+chmod +x src/fibonacci_server.py
 ```
 
 ### The Code, explained
