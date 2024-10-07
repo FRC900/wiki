@@ -16,14 +16,22 @@ class FibonacciAction(object):
     # create messages that are used to publish feedback/result
     _feedback = beginner_tutorials.msg.FibonacciFeedback()
     _result = beginner_tutorials.msg.FibonacciResult()
+    _delay = 1.0
+
     def __init__(self, name):
         self._action_name = name
         self._as = actionlib.SimpleActionServer(self._action_name, beginner_tutorials.msg.FibonacciAction, execute_cb=self.execute_cb, auto_start = False)
         self._as.start()
+
+        # Read delay from a parameter called `delay`
+        if rospy.has_param('~delay'):
+            self._delay = rospy.get_param('~delay')
+        else:
+            rospy.logwarn(f"No parameter named 'delay' found, using default value {self._delay}")
       
     def execute_cb(self, goal):
         # helper variables
-        r = rospy.Rate(1)
+        r = rospy.Rate(1 / self._delay)
         success = True
         
         # append the seeds for the fibonacci sequence
@@ -166,10 +174,18 @@ Running the Action Server
 In a Docker terminal, run:
 
 ```bash
+rosstd
 roscore -p 5802 &
 rosrun actionlib_tutorials fibonacci_server.py
 ```
 
-Now, make an [action client](./action_client.md) to call the server with!
+First, try calling the action graphically by typing 
+```bash
+rosstd
+axclient
+```
+to bring up our graphical action client, `axclient`.
+
+Then, make an [action client](./action_client.md) to call the server with!
 
 [Home](/README.md)
