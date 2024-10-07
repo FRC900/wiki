@@ -42,6 +42,7 @@ class FibonacciAction(object):
                 self._as.set_preempted()
                 success = False
                 break
+            rospy.loginfo(f"{self._action_name}: currently on {i}th iteration")
             self._feedback.sequence.append(self._feedback.sequence[i] + self._feedback.sequence[i-1])
             # publish the feedback
             self._as.publish_feedback(self._feedback)
