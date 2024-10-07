@@ -176,7 +176,7 @@ In a Docker terminal, run:
 ```bash
 rosstd
 roscore -p 5802 &
-rosrun actionlib_tutorials fibonacci_server.py
+rosrun beginner_tutorials fibonacci_server.py
 ```
 
 First, try calling the action graphically by typing 
