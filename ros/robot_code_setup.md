@@ -54,7 +54,7 @@ Note, only one of these options will match your particular OS.  Pick the one tha
 - `git clone git@github.com:FRC900/900RobotCode.git`
 
 ### [**Set up Docker container**](#set-up-docker-container)
-- `cd ~/2023RobotCode/docker`
+- `cd ~/900RobotCode/docker`
 - `./docker-run` (if on an Apple silicon Mac, use `./docker-run-mac`) 
 - Wait for things to download
 
@@ -66,7 +66,7 @@ The general Docker reference is [here](/tools/docker.md).
 
 ### [**Set up submodules/.rosinstall**](#set-up-submodulesrosinstall)
 **Inside Docker:**
-- `cd 2023RobotCode/zebROS_ws`
+- `cd 900RobotCode/zebROS_ws`
 - `git submodule update --init`
 - `wstool update -t src`
 
