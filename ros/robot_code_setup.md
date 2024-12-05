@@ -51,7 +51,7 @@ Note, only one of these options will match your particular OS.  Pick the one tha
 
 ### [**Clone robot code**](#clone-robot-code)
 - `cd ~`
-- `git clone git@github.com:FRC900/2023RobotCode.git`
+- `git clone git@github.com:FRC900/900RobotCode.git`
 
 ### [**Set up Docker container**](#set-up-docker-container)
 - `cd ~/2023RobotCode/docker`
